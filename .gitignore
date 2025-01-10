@@ -6,4 +6,4 @@ crosstool-ng
 aesd-build
 .vscode/
 test.sh.log
-action-runner
+/action-runner

@@ -1,9 +1,0 @@
-﻿{
-  "agentId": 21,
-  "agentName": "ubuntu-pc",
-  "poolId": 1,
-  "poolName": "Default",
-  "serverUrl": "https://pipelinesghubeus3.actions.githubusercontent.com/kx9mDwBKW3VL6jIfUfTDLxlYQT43T3ApbzSXrntGqcflKKI3kf/",
-  "gitHubUrl": "https://github.com/cu-ecen-aeld/assignment-2-Soha18",
-  "workFolder": "_work"
-}
