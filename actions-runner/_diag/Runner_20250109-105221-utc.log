@@ -1,0 +1,681 @@
+[2025-01-09 10:52:21Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:52:21Z INFO HostContext] Well known config file 'Credentials': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials'
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:52:21Z INFO HostContext] Well known config file 'Runner': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.runner'
+[2025-01-09 10:52:21Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2025-01-09 10:52:21Z INFO Listener] RuntimeInformation: Ubuntu 22.04.5 LTS.
+[2025-01-09 10:52:21Z INFO Listener] Version: 2.321.0
+[2025-01-09 10:52:21Z INFO Listener] Commit: e249007931b7c8e857797fa259c167f0bd4f997a
+[2025-01-09 10:52:21Z INFO Listener] Culture: en-US
+[2025-01-09 10:52:21Z INFO Listener] UI Culture: en-US
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:52:21Z INFO Listener] Validating directory permissions for: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:52:21Z INFO CommandLineParser] Parse
+[2025-01-09 10:52:21Z INFO CommandLineParser] Parsing 1 args
+[2025-01-09 10:52:21Z INFO CommandLineParser] parsing argument
+[2025-01-09 10:52:21Z INFO CommandLineParser] HasArgs: False
+[2025-01-09 10:52:21Z INFO CommandLineParser] Adding Command: run
+[2025-01-09 10:52:21Z INFO Listener] Arguments parsed
+[2025-01-09 10:52:21Z INFO Runner] ExecuteCommand
+[2025-01-09 10:52:21Z INFO ConfigurationStore] currentAssemblyLocation: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin/Runner.Listener.dll
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:52:21Z INFO ConfigurationStore] binPath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:52:21Z INFO ConfigurationStore] RootFolder: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:52:21Z INFO HostContext] Well known config file 'Runner': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.runner'
+[2025-01-09 10:52:21Z INFO ConfigurationStore] ConfigFilePath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.runner
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:52:21Z INFO HostContext] Well known config file 'Credentials': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials'
+[2025-01-09 10:52:21Z INFO ConfigurationStore] CredFilePath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:52:21Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_migrated'
+[2025-01-09 10:52:21Z INFO ConfigurationStore] MigratedCredFilePath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_migrated
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:52:21Z INFO HostContext] Well known config file 'Service': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.service'
+[2025-01-09 10:52:21Z INFO ConfigurationStore] ServiceConfigFilePath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.service
+[2025-01-09 10:52:21Z INFO CommandSettings] Flag 'help': 'False'
+[2025-01-09 10:52:21Z INFO CommandSettings] Flag 'version': 'False'
+[2025-01-09 10:52:21Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-01-09 10:52:21Z INFO CommandSettings] Flag 'check': 'False'
+[2025-01-09 10:52:21Z INFO CommandSettings] Command 'configure': 'False'
+[2025-01-09 10:52:21Z INFO CommandSettings] Command 'remove': 'False'
+[2025-01-09 10:52:21Z INFO CommandSettings] Command 'warmup': 'False'
+[2025-01-09 10:52:21Z INFO ConfigurationManager] LoadSettings
+[2025-01-09 10:52:21Z INFO ConfigurationStore] IsConfigured()
+[2025-01-09 10:52:21Z INFO ConfigurationStore] IsConfigured: True
+[2025-01-09 10:52:21Z INFO ConfigurationManager] Is configured: True
+[2025-01-09 10:52:21Z INFO ConfigurationStore] Read setting file: 308 chars
+[2025-01-09 10:52:21Z INFO ConfigurationManager] Settings Loaded
+[2025-01-09 10:52:21Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-01-09 10:52:21Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-01-09 10:52:21Z INFO CommandSettings] Command 'run': 'True'
+[2025-01-09 10:52:21Z INFO ConfigurationStore] IsConfigured()
+[2025-01-09 10:52:21Z INFO ConfigurationStore] IsConfigured: True
+[2025-01-09 10:52:21Z INFO ConfigurationManager] Is configured: True
+[2025-01-09 10:52:21Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2025-01-09 10:52:21Z INFO Runner] Set runner startup type - Manual
+[2025-01-09 10:52:21Z INFO CommandSettings] Flag 'once': 'False'
+[2025-01-09 10:52:21Z INFO CommandSettings] Flag 'once': 'False'
+[2025-01-09 10:52:21Z INFO Runner] RunAsync
+[2025-01-09 10:52:21Z INFO ConfigurationManager] LoadSettings
+[2025-01-09 10:52:21Z INFO ConfigurationStore] IsConfigured()
+[2025-01-09 10:52:21Z INFO ConfigurationStore] IsConfigured: True
+[2025-01-09 10:52:21Z INFO ConfigurationManager] Is configured: True
+[2025-01-09 10:52:21Z INFO ConfigurationManager] Settings Loaded
+[2025-01-09 10:52:21Z INFO MessageListener] {
+  "AgentId": 21,
+  "AgentName": "ubuntu-pc",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus3.actions.githubusercontent.com/kx9mDwBKW3VL6jIfUfTDLxlYQT43T3ApbzSXrntGqcflKKI3kf/",
+  "GitHubUrl": "https://github.com/cu-ecen-aeld/assignment-2-Soha18",
+  "WorkFolder": "_work"
+}
+[2025-01-09 10:52:21Z INFO MessageListener] Loading Credentials
+[2025-01-09 10:52:21Z INFO ConfigurationStore] HasCredentials()
+[2025-01-09 10:52:21Z INFO ConfigurationStore] stored True
+[2025-01-09 10:52:21Z INFO CredentialManager] GetCredentialProvider
+[2025-01-09 10:52:21Z INFO CredentialManager] Creating type OAuth
+[2025-01-09 10:52:21Z INFO CredentialManager] Creating credential type: OAuth
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:52:21Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:52:21Z INFO HostContext] Well known config file 'RSACredentials': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams'
+[2025-01-09 10:52:21Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:52:21Z INFO MessageListener] Attempt to create session.
+[2025-01-09 10:52:21Z INFO MessageListener] Connecting to the Runner Server...
+[2025-01-09 10:52:21Z INFO RunnerServer] EstablishVssConnection
+[2025-01-09 10:52:21Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-01-09 10:52:21Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-09 10:52:21Z INFO RunnerServer] EstablishVssConnection
+[2025-01-09 10:52:21Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-01-09 10:52:21Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-09 10:52:21Z INFO RunnerServer] EstablishVssConnection
+[2025-01-09 10:52:21Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-01-09 10:52:21Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-09 10:52:22Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-09 10:52:22Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-09 10:52:22Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-09 10:52:22Z INFO MessageListener] VssConnection created
+[2025-01-09 10:52:22Z INFO Terminal] WRITE LINE: 
+[2025-01-09 10:52:22Z INFO Terminal] WRITE LINE: 
+[2025-01-09 10:52:23Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:52:23Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:52:24Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 10:52:24Z INFO MessageListener] Session created.
+[2025-01-09 10:52:24Z INFO Terminal] WRITE LINE: Current runner version: '2.321.0'
+[2025-01-09 10:52:24Z INFO Terminal] WRITE LINE: 2025-01-09 10:52:24Z: Listening for Jobs
+[2025-01-09 10:52:24Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2025-01-09 10:52:24Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:52:25Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 10:52:26Z INFO MessageListener] Message '1901903869706701621' received from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e'.
+[2025-01-09 10:52:26Z INFO ConfigurationStore] HasCredentials()
+[2025-01-09 10:52:26Z INFO ConfigurationStore] stored True
+[2025-01-09 10:52:26Z INFO CredentialManager] GetCredentialProvider
+[2025-01-09 10:52:26Z INFO CredentialManager] Creating type OAuth
+[2025-01-09 10:52:26Z INFO CredentialManager] Creating credential type: OAuth
+[2025-01-09 10:52:26Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:52:26Z INFO ActionsRunServer] EstablishVssConnection
+[2025-01-09 10:52:26Z INFO ActionsRunServer] Establish connection with 100 seconds timeout.
+[2025-01-09 10:52:27Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-09 10:52:27Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-09 10:52:27Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:52:27Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:52:28Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 10:52:29Z INFO JobDispatcher] Job request 5 for plan 707999a0-9542-460f-bb4a-4e81d885c5a2 job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 received.
+[2025-01-09 10:52:29Z INFO JobDispatcher] Pull OrchestrationId 707999a0-9542-460f-bb4a-4e81d885c5a2.unit-test.__default from JWT claims
+[2025-01-09 10:52:29Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-01-09 10:52:29Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-01-09 10:52:29Z INFO Terminal] WRITE LINE: 2025-01-09 10:52:29Z: Running job: unit-test
+[2025-01-09 10:52:29Z INFO JobDispatcher] Start renew job request 5 for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2025-01-09 10:52:29Z INFO JobDispatcher] Successfully renew job request 5, job is valid till 1/9/2025 11:02:29 AM
+[2025-01-09 10:52:29Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:52:29Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:52:29Z INFO ProcessInvokerWrapper]   File name: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin/Runner.Worker'
+[2025-01-09 10:52:29Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 150 153'
+[2025-01-09 10:52:29Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:52:29Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:52:29Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:52:29Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-01-09 10:52:29Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:52:29Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:52:29Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:52:29Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-01-09 10:52:29Z INFO ProcessInvokerWrapper] Process started with process id 84085, waiting for process exit.
+[2025-01-09 10:52:29Z INFO JobDispatcher] Send job request message to worker for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2025-01-09 10:52:29Z INFO ProcessChannel] Sending message of length 25989, with hash '36e11b2434268f17a71c84bfdc0665191879aec3d6b44b11b9e2dca333f84889'
+[2025-01-09 10:52:29Z INFO JobNotification] Entering JobStarted Notification
+[2025-01-09 10:52:29Z INFO JobNotification] Entering StartMonitor
+[2025-01-09 10:53:09Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:53:09Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:53:09Z INFO ProcessInvokerWrapper] Finished process 84085 with exit code 100, and elapsed time 00:00:40.3724772.
+[2025-01-09 10:53:09Z INFO JobDispatcher] Worker finished for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171. Code: 100
+[2025-01-09 10:53:09Z INFO JobDispatcher] finish job request for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 with result: Succeeded
+[2025-01-09 10:53:09Z INFO Terminal] WRITE LINE: 2025-01-09 10:53:09Z: Job unit-test completed with result: Succeeded
+[2025-01-09 10:53:09Z INFO JobDispatcher] Stop renew job request for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2025-01-09 10:53:09Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 5.
+[2025-01-09 10:53:09Z INFO JobNotification] Entering JobCompleted Notification
+[2025-01-09 10:53:09Z INFO JobNotification] Entering EndMonitor
+[2025-01-09 10:53:09Z INFO MessageListener] Received job status event. JobState: Online
+[2025-01-09 10:53:10Z INFO MessageListener] Message '5804844800330403537' received from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e'.
+[2025-01-09 10:53:10Z INFO ConfigurationStore] HasCredentials()
+[2025-01-09 10:53:10Z INFO ConfigurationStore] stored True
+[2025-01-09 10:53:10Z INFO CredentialManager] GetCredentialProvider
+[2025-01-09 10:53:10Z INFO CredentialManager] Creating type OAuth
+[2025-01-09 10:53:10Z INFO CredentialManager] Creating credential type: OAuth
+[2025-01-09 10:53:10Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:53:10Z INFO ActionsRunServer] EstablishVssConnection
+[2025-01-09 10:53:10Z INFO ActionsRunServer] Establish connection with 100 seconds timeout.
+[2025-01-09 10:53:10Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-09 10:53:11Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-09 10:53:11Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:53:11Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:53:12Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 10:53:12Z INFO JobDispatcher] Job request 6 for plan 707999a0-9542-460f-bb4a-4e81d885c5a2 job a047640a-23da-5e9b-1ef8-917a09b3753a received.
+[2025-01-09 10:53:12Z INFO JobDispatcher] Pull OrchestrationId 707999a0-9542-460f-bb4a-4e81d885c5a2.full-test.__default from JWT claims
+[2025-01-09 10:53:12Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-01-09 10:53:12Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-01-09 10:53:12Z INFO JobDispatcher] Job request 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 processed succeed.
+[2025-01-09 10:53:13Z INFO Terminal] WRITE LINE: 2025-01-09 10:53:13Z: Running job: full-test
+[2025-01-09 10:53:13Z INFO JobDispatcher] Start renew job request 6 for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2025-01-09 10:53:13Z INFO JobDispatcher] Successfully renew job request 6, job is valid till 1/9/2025 11:03:13 AM
+[2025-01-09 10:53:13Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:53:13Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:53:13Z INFO ProcessInvokerWrapper]   File name: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin/Runner.Worker'
+[2025-01-09 10:53:13Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 151 154'
+[2025-01-09 10:53:13Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:53:13Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:53:13Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:53:13Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-01-09 10:53:13Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:53:13Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:53:13Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:53:13Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-01-09 10:53:13Z INFO ProcessInvokerWrapper] Process started with process id 85108, waiting for process exit.
+[2025-01-09 10:53:13Z INFO JobDispatcher] Send job request message to worker for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2025-01-09 10:53:13Z INFO ProcessChannel] Sending message of length 25991, with hash '0f277c63b2260d8eeeac489c3efa0a45c641904655d4cae61140f5f8e087f274'
+[2025-01-09 10:53:13Z INFO JobNotification] Entering JobStarted Notification
+[2025-01-09 10:53:13Z INFO JobNotification] Entering StartMonitor
+[2025-01-09 10:53:34Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:53:34Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:53:34Z INFO ProcessInvokerWrapper] Finished process 85108 with exit code 102, and elapsed time 00:00:21.4152127.
+[2025-01-09 10:53:34Z INFO JobDispatcher] Worker finished for job a047640a-23da-5e9b-1ef8-917a09b3753a. Code: 102
+[2025-01-09 10:53:34Z INFO JobDispatcher] finish job request for job a047640a-23da-5e9b-1ef8-917a09b3753a with result: Failed
+[2025-01-09 10:53:34Z INFO Terminal] WRITE LINE: 2025-01-09 10:53:34Z: Job full-test completed with result: Failed
+[2025-01-09 10:53:34Z INFO JobDispatcher] Stop renew job request for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2025-01-09 10:53:34Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 6.
+[2025-01-09 10:53:34Z INFO JobNotification] Entering JobCompleted Notification
+[2025-01-09 10:53:34Z INFO JobNotification] Entering EndMonitor
+[2025-01-09 10:53:34Z INFO MessageListener] Received job status event. JobState: Online
+[2025-01-09 10:53:35Z INFO MessageListener] Message '2246945448057232625' received from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e'.
+[2025-01-09 10:53:35Z INFO ConfigurationStore] HasCredentials()
+[2025-01-09 10:53:35Z INFO ConfigurationStore] stored True
+[2025-01-09 10:53:35Z INFO CredentialManager] GetCredentialProvider
+[2025-01-09 10:53:35Z INFO CredentialManager] Creating type OAuth
+[2025-01-09 10:53:35Z INFO CredentialManager] Creating credential type: OAuth
+[2025-01-09 10:53:35Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:53:35Z INFO ActionsRunServer] EstablishVssConnection
+[2025-01-09 10:53:35Z INFO ActionsRunServer] Establish connection with 100 seconds timeout.
+[2025-01-09 10:53:35Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-09 10:53:36Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-09 10:53:36Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:53:36Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:53:36Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 10:53:37Z INFO JobDispatcher] Job request 7 for plan db2e7581-2e4d-43d6-b17b-9b96ea0f99db job a047640a-23da-5e9b-1ef8-917a09b3753a received.
+[2025-01-09 10:53:37Z INFO JobDispatcher] Pull OrchestrationId db2e7581-2e4d-43d6-b17b-9b96ea0f99db.full-test.__default from JWT claims
+[2025-01-09 10:53:37Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-01-09 10:53:37Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-01-09 10:53:37Z INFO JobDispatcher] Job request a047640a-23da-5e9b-1ef8-917a09b3753a processed succeed.
+[2025-01-09 10:53:37Z INFO Terminal] WRITE LINE: 2025-01-09 10:53:37Z: Running job: full-test
+[2025-01-09 10:53:37Z INFO JobDispatcher] Start renew job request 7 for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2025-01-09 10:53:37Z INFO JobDispatcher] Successfully renew job request 7, job is valid till 1/9/2025 11:03:37 AM
+[2025-01-09 10:53:37Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:53:37Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:53:37Z INFO ProcessInvokerWrapper]   File name: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin/Runner.Worker'
+[2025-01-09 10:53:37Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 135 154'
+[2025-01-09 10:53:37Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:53:37Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:53:37Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:53:37Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-01-09 10:53:37Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:53:37Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:53:37Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:53:37Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-01-09 10:53:37Z INFO ProcessInvokerWrapper] Process started with process id 86130, waiting for process exit.
+[2025-01-09 10:53:37Z INFO JobDispatcher] Send job request message to worker for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2025-01-09 10:53:37Z INFO ProcessChannel] Sending message of length 25907, with hash 'bc2df4c43f4b0aeb5032e97026f8d51d8b42c97afdb4e63467b1c0385a0ca8cc'
+[2025-01-09 10:53:37Z INFO JobNotification] Entering JobStarted Notification
+[2025-01-09 10:53:37Z INFO JobNotification] Entering StartMonitor
+[2025-01-09 10:53:52Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:53:52Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:53:52Z INFO ProcessInvokerWrapper] Finished process 86130 with exit code 102, and elapsed time 00:00:14.7687867.
+[2025-01-09 10:53:52Z INFO JobDispatcher] Worker finished for job a047640a-23da-5e9b-1ef8-917a09b3753a. Code: 102
+[2025-01-09 10:53:52Z INFO JobDispatcher] finish job request for job a047640a-23da-5e9b-1ef8-917a09b3753a with result: Failed
+[2025-01-09 10:53:52Z INFO Terminal] WRITE LINE: 2025-01-09 10:53:52Z: Job full-test completed with result: Failed
+[2025-01-09 10:53:52Z INFO JobDispatcher] Stop renew job request for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2025-01-09 10:53:52Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 7.
+[2025-01-09 10:53:52Z INFO JobNotification] Entering JobCompleted Notification
+[2025-01-09 10:53:52Z INFO JobNotification] Entering EndMonitor
+[2025-01-09 10:53:52Z INFO MessageListener] Received job status event. JobState: Online
+[2025-01-09 10:53:53Z INFO MessageListener] Message '3155364446085791339' received from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e'.
+[2025-01-09 10:53:53Z INFO ConfigurationStore] HasCredentials()
+[2025-01-09 10:53:53Z INFO ConfigurationStore] stored True
+[2025-01-09 10:53:53Z INFO CredentialManager] GetCredentialProvider
+[2025-01-09 10:53:53Z INFO CredentialManager] Creating type OAuth
+[2025-01-09 10:53:53Z INFO CredentialManager] Creating credential type: OAuth
+[2025-01-09 10:53:53Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:53:53Z INFO ActionsRunServer] EstablishVssConnection
+[2025-01-09 10:53:53Z INFO ActionsRunServer] Establish connection with 100 seconds timeout.
+[2025-01-09 10:53:53Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-09 10:53:54Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-09 10:53:54Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:53:54Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:54:00Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 10:54:00Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (5.8361424 seconds)
+[2025-01-09 10:54:00Z INFO JobDispatcher] Job request 8 for plan db2e7581-2e4d-43d6-b17b-9b96ea0f99db job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 received.
+[2025-01-09 10:54:00Z INFO JobDispatcher] Pull OrchestrationId db2e7581-2e4d-43d6-b17b-9b96ea0f99db.unit-test.__default from JWT claims
+[2025-01-09 10:54:00Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-01-09 10:54:00Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-01-09 10:54:00Z INFO JobDispatcher] Job request a047640a-23da-5e9b-1ef8-917a09b3753a processed succeed.
+[2025-01-09 10:54:00Z INFO Terminal] WRITE LINE: 2025-01-09 10:54:00Z: Running job: unit-test
+[2025-01-09 10:54:00Z INFO JobDispatcher] Start renew job request 8 for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2025-01-09 10:54:00Z INFO JobDispatcher] Successfully renew job request 8, job is valid till 1/9/2025 11:04:00 AM
+[2025-01-09 10:54:00Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:00Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:00Z INFO ProcessInvokerWrapper]   File name: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin/Runner.Worker'
+[2025-01-09 10:54:00Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 143 154'
+[2025-01-09 10:54:00Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:00Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:54:00Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:00Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-01-09 10:54:00Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:00Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:00Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:00Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-01-09 10:54:00Z INFO ProcessInvokerWrapper] Process started with process id 87158, waiting for process exit.
+[2025-01-09 10:54:00Z INFO JobDispatcher] Send job request message to worker for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2025-01-09 10:54:00Z INFO ProcessChannel] Sending message of length 25905, with hash '2621a99a6359bbad4e7881548d32c1398d286ef0f8361985545869911b98c097'
+[2025-01-09 10:54:00Z INFO JobNotification] Entering JobStarted Notification
+[2025-01-09 10:54:00Z INFO JobNotification] Entering StartMonitor
+[2025-01-09 10:54:15Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:15Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:15Z INFO ProcessInvokerWrapper] Finished process 87158 with exit code 100, and elapsed time 00:00:14.3132920.
+[2025-01-09 10:54:15Z INFO JobDispatcher] Worker finished for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171. Code: 100
+[2025-01-09 10:54:15Z INFO JobDispatcher] finish job request for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 with result: Succeeded
+[2025-01-09 10:54:15Z INFO Terminal] WRITE LINE: 2025-01-09 10:54:15Z: Job unit-test completed with result: Succeeded
+[2025-01-09 10:54:15Z INFO JobDispatcher] Stop renew job request for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2025-01-09 10:54:15Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 8.
+[2025-01-09 10:54:15Z INFO JobNotification] Entering JobCompleted Notification
+[2025-01-09 10:54:15Z INFO JobNotification] Entering EndMonitor
+[2025-01-09 10:54:15Z INFO MessageListener] Received job status event. JobState: Online
+[2025-01-09 10:54:15Z INFO MessageListener] Message '677455506140556398' received from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e'.
+[2025-01-09 10:54:15Z INFO ConfigurationStore] HasCredentials()
+[2025-01-09 10:54:15Z INFO ConfigurationStore] stored True
+[2025-01-09 10:54:15Z INFO CredentialManager] GetCredentialProvider
+[2025-01-09 10:54:15Z INFO CredentialManager] Creating type OAuth
+[2025-01-09 10:54:15Z INFO CredentialManager] Creating credential type: OAuth
+[2025-01-09 10:54:15Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:54:15Z INFO ActionsRunServer] EstablishVssConnection
+[2025-01-09 10:54:15Z INFO ActionsRunServer] Establish connection with 100 seconds timeout.
+[2025-01-09 10:54:15Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-09 10:54:16Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-09 10:54:16Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:54:16Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:54:17Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 10:54:17Z INFO JobDispatcher] Job request 9 for plan 584e9d09-e56d-4905-af19-d38dec631368 job a047640a-23da-5e9b-1ef8-917a09b3753a received.
+[2025-01-09 10:54:17Z INFO JobDispatcher] Pull OrchestrationId 584e9d09-e56d-4905-af19-d38dec631368.full-test.__default from JWT claims
+[2025-01-09 10:54:17Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-01-09 10:54:17Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-01-09 10:54:17Z INFO JobDispatcher] Job request 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 processed succeed.
+[2025-01-09 10:54:17Z INFO Terminal] WRITE LINE: 2025-01-09 10:54:17Z: Running job: full-test
+[2025-01-09 10:54:17Z INFO JobDispatcher] Start renew job request 9 for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2025-01-09 10:54:18Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 1/9/2025 11:04:17 AM
+[2025-01-09 10:54:18Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:18Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:18Z INFO ProcessInvokerWrapper]   File name: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin/Runner.Worker'
+[2025-01-09 10:54:18Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 152 155'
+[2025-01-09 10:54:18Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:18Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:54:18Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:18Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-01-09 10:54:18Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:18Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:18Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:18Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-01-09 10:54:18Z INFO ProcessInvokerWrapper] Process started with process id 88118, waiting for process exit.
+[2025-01-09 10:54:18Z INFO JobDispatcher] Send job request message to worker for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2025-01-09 10:54:18Z INFO ProcessChannel] Sending message of length 25917, with hash '8689ddc37053d578660635a84f7a12875135516336afe2872cc33d2dd0b8366c'
+[2025-01-09 10:54:18Z INFO JobNotification] Entering JobStarted Notification
+[2025-01-09 10:54:18Z INFO JobNotification] Entering StartMonitor
+[2025-01-09 10:54:37Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:37Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:37Z INFO ProcessInvokerWrapper] Finished process 88118 with exit code 100, and elapsed time 00:00:19.2375944.
+[2025-01-09 10:54:37Z INFO JobDispatcher] Worker finished for job a047640a-23da-5e9b-1ef8-917a09b3753a. Code: 100
+[2025-01-09 10:54:37Z INFO JobDispatcher] finish job request for job a047640a-23da-5e9b-1ef8-917a09b3753a with result: Succeeded
+[2025-01-09 10:54:37Z INFO Terminal] WRITE LINE: 2025-01-09 10:54:37Z: Job full-test completed with result: Succeeded
+[2025-01-09 10:54:37Z INFO JobDispatcher] Stop renew job request for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2025-01-09 10:54:37Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 9.
+[2025-01-09 10:54:37Z INFO JobNotification] Entering JobCompleted Notification
+[2025-01-09 10:54:37Z INFO JobNotification] Entering EndMonitor
+[2025-01-09 10:54:37Z INFO MessageListener] Received job status event. JobState: Online
+[2025-01-09 10:54:38Z INFO MessageListener] Message '8944134935245640933' received from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e'.
+[2025-01-09 10:54:38Z INFO ConfigurationStore] HasCredentials()
+[2025-01-09 10:54:38Z INFO ConfigurationStore] stored True
+[2025-01-09 10:54:38Z INFO CredentialManager] GetCredentialProvider
+[2025-01-09 10:54:38Z INFO CredentialManager] Creating type OAuth
+[2025-01-09 10:54:38Z INFO CredentialManager] Creating credential type: OAuth
+[2025-01-09 10:54:38Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:54:38Z INFO ActionsRunServer] EstablishVssConnection
+[2025-01-09 10:54:38Z INFO ActionsRunServer] Establish connection with 100 seconds timeout.
+[2025-01-09 10:54:38Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-09 10:54:38Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-09 10:54:39Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:54:39Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:54:40Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 10:54:40Z INFO JobDispatcher] Job request 10 for plan 584e9d09-e56d-4905-af19-d38dec631368 job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 received.
+[2025-01-09 10:54:40Z INFO JobDispatcher] Pull OrchestrationId 584e9d09-e56d-4905-af19-d38dec631368.unit-test.__default from JWT claims
+[2025-01-09 10:54:40Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-01-09 10:54:40Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-01-09 10:54:40Z INFO JobDispatcher] Job request a047640a-23da-5e9b-1ef8-917a09b3753a processed succeed.
+[2025-01-09 10:54:40Z INFO Terminal] WRITE LINE: 2025-01-09 10:54:40Z: Running job: unit-test
+[2025-01-09 10:54:40Z INFO JobDispatcher] Start renew job request 10 for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2025-01-09 10:54:40Z INFO JobDispatcher] Successfully renew job request 10, job is valid till 1/9/2025 11:04:40 AM
+[2025-01-09 10:54:40Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:40Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:40Z INFO ProcessInvokerWrapper]   File name: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin/Runner.Worker'
+[2025-01-09 10:54:40Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 152 155'
+[2025-01-09 10:54:40Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:40Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:54:40Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:40Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-01-09 10:54:40Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:40Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:40Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:40Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-01-09 10:54:40Z INFO ProcessInvokerWrapper] Process started with process id 89146, waiting for process exit.
+[2025-01-09 10:54:40Z INFO JobDispatcher] Send job request message to worker for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2025-01-09 10:54:40Z INFO ProcessChannel] Sending message of length 25916, with hash 'a64be26f396eab68d5761161b76598c2b6bdc5e70f5b437f1c6b67439d0c07f8'
+[2025-01-09 10:54:40Z INFO JobNotification] Entering JobStarted Notification
+[2025-01-09 10:54:40Z INFO JobNotification] Entering StartMonitor
+[2025-01-09 10:54:54Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:54Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:54Z INFO ProcessInvokerWrapper] Finished process 89146 with exit code 100, and elapsed time 00:00:13.9808306.
+[2025-01-09 10:54:54Z INFO JobDispatcher] Worker finished for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171. Code: 100
+[2025-01-09 10:54:54Z INFO JobDispatcher] finish job request for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 with result: Succeeded
+[2025-01-09 10:54:54Z INFO Terminal] WRITE LINE: 2025-01-09 10:54:54Z: Job unit-test completed with result: Succeeded
+[2025-01-09 10:54:54Z INFO JobDispatcher] Stop renew job request for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2025-01-09 10:54:54Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 10.
+[2025-01-09 10:54:54Z INFO JobNotification] Entering JobCompleted Notification
+[2025-01-09 10:54:54Z INFO JobNotification] Entering EndMonitor
+[2025-01-09 10:54:54Z INFO MessageListener] Received job status event. JobState: Online
+[2025-01-09 11:24:59Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 11:42:40Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 11:42:41Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 11:47:44Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 11:47:44Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 11:55:19Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 12:25:38Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 12:33:12Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 12:33:13Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 12:43:19Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 12:43:25Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 12:43:25Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (5.8309106 seconds)
+[2025-01-09 12:56:03Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 13:23:50Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 13:23:51Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 13:26:22Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 13:39:00Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 13:39:06Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 13:39:06Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (5.8374807 seconds)
+[2025-01-09 13:56:46Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 14:14:28Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 14:14:29Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 14:27:06Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 14:34:41Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 14:34:46Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 14:34:46Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (5.9394528 seconds)
+[2025-01-09 14:45:43Z WARN GitHubActionsService] GET request to https://broker.actions.githubusercontent.com/message?sessionId=8119eb45-aa5b-4c58-9f64-ba908f3f092e&status=Online&runnerVersion=2.321.0&os=Linux&architecture=X64&disableUpdate=false timed out after 100 seconds.
+[2025-01-09 14:45:43Z ERR  BrokerServer] Catch exception during request
+[2025-01-09 14:45:43Z ERR  BrokerServer] System.TimeoutException: The HTTP request timed out after 00:01:40.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Operation canceled.
+ ---> System.Net.Sockets.SocketException (125): Operation canceled
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-01-09 14:45:43Z ERR  BrokerServer] #####################################################
+[2025-01-09 14:45:43Z ERR  BrokerServer] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Operation canceled.
+ ---> System.Net.Sockets.SocketException (125): Operation canceled
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[2025-01-09 14:45:43Z ERR  BrokerServer] #####################################################
+[2025-01-09 14:45:43Z ERR  BrokerServer] System.IO.IOException: Unable to read data from the transport connection: Operation canceled.
+ ---> System.Net.Sockets.SocketException (125): Operation canceled
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+[2025-01-09 14:45:43Z ERR  BrokerServer] #####################################################
+[2025-01-09 14:45:43Z ERR  BrokerServer] System.Net.Sockets.SocketException (125): Operation canceled
+[2025-01-09 14:45:43Z WARN BrokerServer] Back off 12.587 seconds before next retry. 4 attempt left.
+[2025-01-09 14:57:44Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 15:05:19Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 15:05:20Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 15:28:02Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 15:30:34Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 15:30:35Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 15:55:51Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 15:55:52Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 15:58:24Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 16:26:10Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 16:26:16Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 16:26:16Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (6.1252899 seconds)
+[2025-01-09 16:28:47Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 16:46:28Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 16:46:29Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 16:59:06Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 17:21:51Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 17:21:51Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 17:29:26Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 17:37:01Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 17:37:02Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 17:59:45Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 18:17:26Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 18:17:27Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 18:27:33Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 18:27:34Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 18:30:06Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 19:00:28Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 19:13:06Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 19:13:12Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 19:13:12Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (5.9382316 seconds)
+[2025-01-09 19:18:16Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 19:18:17Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 19:30:54Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 20:01:13Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 20:08:47Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 20:08:48Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 20:08:49Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 20:08:50Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 20:31:33Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 20:59:22Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 20:59:23Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 21:01:54Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 21:04:25Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 21:04:26Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 21:32:14Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 21:49:55Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 21:49:56Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 22:00:02Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 22:00:03Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 22:02:35Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 22:32:53Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 22:40:28Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 22:40:29Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 22:55:38Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 22:55:44Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 22:55:44Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (5.7393291 seconds)
+[2025-01-09 23:03:19Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 23:31:06Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 23:31:07Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 23:33:39Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-09 23:51:19Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 23:51:25Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 23:51:25Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (5.837008 seconds)
+[2025-01-10 00:04:03Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 00:21:43Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 00:21:44Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 00:34:22Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 00:47:00Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 00:47:06Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 00:47:06Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (5.7278071 seconds)
+[2025-01-10 01:04:46Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 01:12:21Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 01:12:22Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 01:35:07Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 01:42:42Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 01:42:48Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 01:42:48Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (6.0400827 seconds)
+[2025-01-10 02:03:01Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 02:03:01Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 02:05:33Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 02:35:51Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 02:38:23Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 02:38:28Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 02:38:28Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (5.6325525 seconds)
+[2025-01-10 02:53:38Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 02:53:39Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 03:06:17Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 03:34:05Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 03:34:06Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 03:36:37Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 03:44:12Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 03:44:13Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 04:06:56Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 04:29:41Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 04:29:42Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 04:34:46Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 04:34:47Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 04:37:18Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 05:07:37Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 05:25:18Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 05:25:19Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 05:25:19Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 05:25:20Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 05:37:57Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 06:08:16Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 06:15:51Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 06:15:57Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 06:15:57Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (5.8373237 seconds)
+[2025-01-10 06:21:00Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 06:21:01Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 06:38:42Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 07:06:33Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 07:06:34Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 07:09:05Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 07:16:39Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 07:16:40Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 07:39:25Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 07:57:06Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 07:57:07Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 08:09:43Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 08:12:15Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 08:12:16Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 08:40:04Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 08:47:39Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 08:47:45Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 08:47:45Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (5.9395751 seconds)
+[2025-01-10 09:07:57Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 09:07:58Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 09:10:30Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 09:38:17Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 09:38:23Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 09:38:23Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (6.0469134 seconds)
+[2025-01-10 09:40:54Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 10:03:39Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 10:03:40Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 10:11:14Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 10:28:57Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 10:28:58Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 10:41:36Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 10:59:17Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 10:59:18Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 11:11:56Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 11:19:31Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 11:19:37Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 11:19:37Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (5.736281 seconds)
+[2025-01-10 11:42:21Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 11:54:59Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 11:55:00Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 12:10:09Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 12:10:15Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 12:10:15Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (5.8882688 seconds)
+[2025-01-10 12:12:46Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 12:43:06Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 12:50:41Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 12:50:42Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 13:00:48Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 13:00:49Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 13:13:27Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 13:43:46Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 13:46:18Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 13:46:19Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 13:51:22Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 13:51:23Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 14:14:07Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 14:41:54Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 14:41:56Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 14:41:56Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-10 14:41:57Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-10 14:44:29Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.
+[2025-01-10 15:14:47Z INFO MessageListener] No message retrieved from session '8119eb45-aa5b-4c58-9f64-ba908f3f092e' within last 30 minutes.

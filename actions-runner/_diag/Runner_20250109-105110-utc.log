@@ -1,0 +1,221 @@
+[2025-01-09 10:51:10Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:51:11Z INFO HostContext] Well known config file 'Credentials': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials'
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:51:11Z INFO HostContext] Well known config file 'Runner': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.runner'
+[2025-01-09 10:51:11Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2025-01-09 10:51:11Z INFO Listener] RuntimeInformation: Ubuntu 22.04.5 LTS.
+[2025-01-09 10:51:11Z INFO Listener] Version: 2.321.0
+[2025-01-09 10:51:11Z INFO Listener] Commit: e249007931b7c8e857797fa259c167f0bd4f997a
+[2025-01-09 10:51:11Z INFO Listener] Culture: en-US
+[2025-01-09 10:51:11Z INFO Listener] UI Culture: en-US
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:51:11Z INFO Listener] Validating directory permissions for: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:51:11Z INFO CommandLineParser] Parse
+[2025-01-09 10:51:11Z INFO CommandLineParser] Parsing 5 args
+[2025-01-09 10:51:11Z INFO CommandLineParser] parsing argument
+[2025-01-09 10:51:11Z INFO CommandLineParser] HasArgs: False
+[2025-01-09 10:51:11Z INFO CommandLineParser] Adding Command: configure
+[2025-01-09 10:51:11Z INFO CommandLineParser] parsing argument
+[2025-01-09 10:51:11Z INFO CommandLineParser] HasArgs: True
+[2025-01-09 10:51:11Z INFO CommandLineParser] arg: url
+[2025-01-09 10:51:11Z INFO CommandLineParser] parsing argument
+[2025-01-09 10:51:11Z INFO CommandLineParser] HasArgs: True
+[2025-01-09 10:51:11Z INFO CommandLineParser] Adding option 'url': 'https://github.com/cu-ecen-aeld/assignment-2-Soha18'
+[2025-01-09 10:51:11Z INFO CommandLineParser] parsing argument
+[2025-01-09 10:51:11Z INFO CommandLineParser] HasArgs: True
+[2025-01-09 10:51:11Z INFO CommandLineParser] arg: token
+[2025-01-09 10:51:11Z INFO CommandLineParser] parsing argument
+[2025-01-09 10:51:11Z INFO CommandLineParser] HasArgs: True
+[2025-01-09 10:51:11Z INFO CommandLineParser] Adding option 'token': '***'
+[2025-01-09 10:51:11Z INFO Listener] Arguments parsed
+[2025-01-09 10:51:11Z INFO Runner] ExecuteCommand
+[2025-01-09 10:51:11Z INFO ConfigurationStore] currentAssemblyLocation: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin/Runner.Listener.dll
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:51:11Z INFO ConfigurationStore] binPath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:51:11Z INFO ConfigurationStore] RootFolder: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:51:11Z INFO HostContext] Well known config file 'Runner': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.runner'
+[2025-01-09 10:51:11Z INFO ConfigurationStore] ConfigFilePath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.runner
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:51:11Z INFO HostContext] Well known config file 'Credentials': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials'
+[2025-01-09 10:51:11Z INFO ConfigurationStore] CredFilePath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:51:11Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_migrated'
+[2025-01-09 10:51:11Z INFO ConfigurationStore] MigratedCredFilePath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_migrated
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:51:11Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:51:11Z INFO HostContext] Well known config file 'Service': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.service'
+[2025-01-09 10:51:11Z INFO ConfigurationStore] ServiceConfigFilePath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.service
+[2025-01-09 10:51:11Z INFO CommandSettings] Flag 'help': 'False'
+[2025-01-09 10:51:11Z INFO CommandSettings] Flag 'version': 'False'
+[2025-01-09 10:51:11Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-01-09 10:51:11Z INFO CommandSettings] Flag 'check': 'False'
+[2025-01-09 10:51:11Z INFO CommandSettings] Command 'configure': 'True'
+[2025-01-09 10:51:11Z INFO Terminal] WRITE LINE: 
+[2025-01-09 10:51:11Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2025-01-09 10:51:11Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2025-01-09 10:51:11Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2025-01-09 10:51:11Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2025-01-09 10:51:11Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2025-01-09 10:51:11Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2025-01-09 10:51:11Z INFO Terminal] WRITE LINE: |                                                                              |
+[2025-01-09 10:51:11Z INFO Terminal] WRITE: |                       
+[2025-01-09 10:51:11Z INFO Terminal] WRITE: Self-hosted runner registration
+[2025-01-09 10:51:11Z INFO Terminal] WRITE LINE:                         |
+[2025-01-09 10:51:11Z INFO Terminal] WRITE LINE: |                                                                              |
+[2025-01-09 10:51:11Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2025-01-09 10:51:11Z INFO ConfigurationManager] ConfigureAsync
+[2025-01-09 10:51:11Z INFO CommandSettings] Flag 'generateServiceConfig': 'False'
+[2025-01-09 10:51:11Z INFO ConfigurationStore] IsConfigured()
+[2025-01-09 10:51:11Z INFO ConfigurationStore] IsConfigured: False
+[2025-01-09 10:51:11Z INFO ConfigurationManager] Is configured: False
+[2025-01-09 10:51:11Z INFO CommandSettings] Arg 'url': 'https://github.com/cu-ecen-aeld/assignment-2-Soha18'
+[2025-01-09 10:51:11Z INFO CommandSettings] Remove url from Arg dictionary.
+[2025-01-09 10:51:11Z INFO CommandSettings] Arg 'token': '***'
+[2025-01-09 10:51:11Z INFO CommandSettings] Remove token from Arg dictionary.
+[2025-01-09 10:51:11Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration' (F7D8:E8958:2F985D7:30BD81C:677FAA1F)
+[2025-01-09 10:51:11Z INFO ConfigurationManager] Using V2 flow: False
+[2025-01-09 10:51:11Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2025-01-09 10:51:11Z INFO RunnerServer] EstablishVssConnection
+[2025-01-09 10:51:11Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-01-09 10:51:11Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-09 10:51:11Z INFO RunnerServer] EstablishVssConnection
+[2025-01-09 10:51:11Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-01-09 10:51:11Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-09 10:51:11Z INFO RunnerServer] EstablishVssConnection
+[2025-01-09 10:51:11Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-01-09 10:51:11Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-09 10:51:13Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-09 10:51:13Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-09 10:51:13Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-09 10:51:13Z INFO Terminal] WRITE LINE: 
+[2025-01-09 10:51:13Z INFO ConfigurationManager] Test Connection complete.
+[2025-01-09 10:51:13Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:51:13Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:51:13Z INFO HostContext] Well known config file 'RSACredentials': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams'
+[2025-01-09 10:51:13Z INFO RSAFileKeyManager] Creating new RSA key using 2048-bit key length
+[2025-01-09 10:51:13Z INFO RSAFileKeyManager] Successfully saved RSA key parameters to file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:51:13Z INFO RSAFileKeyManager] Which2: 'chmod'
+[2025-01-09 10:51:13Z INFO RSAFileKeyManager] Location: '/usr/bin/chmod'
+[2025-01-09 10:51:13Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:51:13Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:51:13Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:51:13Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/chmod'
+[2025-01-09 10:51:13Z INFO ProcessInvokerWrapper]   Arguments: '600 /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams'
+[2025-01-09 10:51:13Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:51:13Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:51:13Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:51:13Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:51:13Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:51:13Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:51:13Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:51:13Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:51:13Z INFO ProcessInvokerWrapper] Process started with process id 83972, waiting for process exit.
+[2025-01-09 10:51:13Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:51:13Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:51:13Z INFO ProcessInvokerWrapper] Finished process 83972 with exit code 0, and elapsed time 00:00:00.0085013.
+[2025-01-09 10:51:13Z INFO RSAFileKeyManager] Successfully set permissions for RSA key parameters file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:51:13Z INFO CommandSettings] Arg 'runnergroup': ''
+[2025-01-09 10:51:13Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-01-09 10:51:13Z INFO PromptManager] ReadValue
+[2025-01-09 10:51:13Z INFO Terminal] WRITE: Enter the name of the runner group to add this runner to: 
+[2025-01-09 10:51:13Z INFO Terminal] WRITE: [press Enter for Default] 
+[2025-01-09 10:51:13Z INFO Terminal] READ LINE
+[2025-01-09 10:51:27Z INFO Terminal] Read value: ''
+[2025-01-09 10:51:27Z INFO PromptManager] Falling back to the default: 'Default'
+[2025-01-09 10:51:27Z INFO Terminal] WRITE LINE: 
+[2025-01-09 10:51:27Z INFO ConfigurationManager] Found a self-hosted runner group with id 1 and name Default
+[2025-01-09 10:51:27Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2025-01-09 10:51:27Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2025-01-09 10:51:27Z INFO CommandSettings] Arg 'name': ''
+[2025-01-09 10:51:27Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-01-09 10:51:27Z INFO PromptManager] ReadValue
+[2025-01-09 10:51:27Z INFO Terminal] WRITE: Enter the name of runner: 
+[2025-01-09 10:51:27Z INFO Terminal] WRITE: [press Enter for ubuntu-pc] 
+[2025-01-09 10:51:27Z INFO Terminal] READ LINE
+[2025-01-09 10:51:30Z INFO Terminal] Read value: ''
+[2025-01-09 10:51:30Z INFO PromptManager] Falling back to the default: 'ubuntu-pc'
+[2025-01-09 10:51:30Z INFO Terminal] WRITE LINE: 
+[2025-01-09 10:51:30Z INFO CommandSettings] Arg 'labels': ''
+[2025-01-09 10:51:30Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-01-09 10:51:30Z INFO PromptManager] ReadValue
+[2025-01-09 10:51:30Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Linux', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2025-01-09 10:51:30Z INFO Terminal] WRITE: [press Enter to skip] 
+[2025-01-09 10:51:30Z INFO Terminal] READ LINE
+[2025-01-09 10:51:48Z INFO Terminal] Read value: ''
+[2025-01-09 10:51:48Z INFO Terminal] WRITE LINE: 
+[2025-01-09 10:51:48Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2025-01-09 10:51:48Z INFO CommandSettings] Flag 'no-default-labels': 'False'
+[2025-01-09 10:51:48Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2025-01-09 10:51:48Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2025-01-09 10:51:48Z INFO ConfigurationStore] Saving OAuth credential @ /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials
+[2025-01-09 10:51:48Z INFO ConfigurationStore] Credentials Saved.
+[2025-01-09 10:51:48Z INFO ConfigurationStore] HasCredentials()
+[2025-01-09 10:51:48Z INFO ConfigurationStore] stored True
+[2025-01-09 10:51:48Z INFO CredentialManager] GetCredentialProvider
+[2025-01-09 10:51:48Z INFO CredentialManager] Creating type OAuth
+[2025-01-09 10:51:48Z INFO CredentialManager] Creating credential type: OAuth
+[2025-01-09 10:51:48Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:51:48Z INFO RunnerServer] EstablishVssConnection
+[2025-01-09 10:51:48Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-01-09 10:51:48Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-09 10:51:48Z INFO RunnerServer] EstablishVssConnection
+[2025-01-09 10:51:48Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-01-09 10:51:48Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-09 10:51:48Z INFO RunnerServer] EstablishVssConnection
+[2025-01-09 10:51:48Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-01-09 10:51:48Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-09 10:51:49Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-09 10:51:49Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-09 10:51:49Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-09 10:51:49Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:51:49Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_rsaparams
+[2025-01-09 10:51:50Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-09 10:51:50Z INFO CommandSettings] Arg 'work': ''
+[2025-01-09 10:51:50Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-01-09 10:51:50Z INFO PromptManager] ReadValue
+[2025-01-09 10:51:50Z INFO Terminal] WRITE: Enter name of work folder: 
+[2025-01-09 10:51:50Z INFO Terminal] WRITE: [press Enter for _work] 
+[2025-01-09 10:51:50Z INFO Terminal] READ LINE
+[2025-01-09 10:51:57Z INFO Terminal] Read value: ''
+[2025-01-09 10:51:57Z INFO PromptManager] Falling back to the default: '_work'
+[2025-01-09 10:51:57Z INFO ConfigurationStore] Saving runner settings.
+[2025-01-09 10:51:57Z INFO ConfigurationStore] Settings Saved.
+[2025-01-09 10:51:57Z INFO Terminal] WRITE LINE: 
+[2025-01-09 10:51:57Z INFO Terminal] WRITE LINE: 
+[2025-01-09 10:51:57Z INFO SystemDControlManager] Service name 'actions.runner.cu-ecen-aeld-assignment-2-Soha18.ubuntu-pc.service' display name 'GitHub Actions Runner (cu-ecen-aeld-assignment-2-Soha18.ubuntu-pc)' will be used for service configuration.
+[2025-01-09 10:51:57Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:51:57Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:51:57Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:51:57Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:51:57Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:51:57Z INFO UnixUtil] Which2: 'chmod'
+[2025-01-09 10:51:57Z INFO UnixUtil] Location: '/usr/bin/chmod'
+[2025-01-09 10:51:57Z INFO UnixUtil] Running /usr/bin/chmod 755 "/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/svc.sh"
+[2025-01-09 10:51:57Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:51:57Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/chmod'
+[2025-01-09 10:51:57Z INFO ProcessInvokerWrapper]   Arguments: '755 "/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/svc.sh"'
+[2025-01-09 10:51:57Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:51:57Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2025-01-09 10:51:57Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:51:57Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:51:57Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:51:57Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:51:57Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:51:57Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:51:57Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 83997.
+[2025-01-09 10:51:57Z INFO ProcessInvokerWrapper] Process started with process id 83997, waiting for process exit.
+[2025-01-09 10:51:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:51:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:51:57Z INFO ProcessInvokerWrapper] Finished process 83997 with exit code 0, and elapsed time 00:00:00.0020775.
+[2025-01-09 10:51:57Z INFO Listener] Runner execution has finished with return code 0

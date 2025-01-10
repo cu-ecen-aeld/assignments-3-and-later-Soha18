@@ -1,0 +1,3466 @@
+[2025-01-09 10:54:40Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-01-09 10:54:40Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:40Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:40Z INFO HostContext] Well known config file 'Credentials': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials'
+[2025-01-09 10:54:40Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:40Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:40Z INFO HostContext] Well known config file 'Runner': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.runner'
+[2025-01-09 10:54:40Z INFO Worker] Version: 2.321.0
+[2025-01-09 10:54:40Z INFO Worker] Commit: e249007931b7c8e857797fa259c167f0bd4f997a
+[2025-01-09 10:54:40Z INFO Worker] Culture: en-US
+[2025-01-09 10:54:40Z INFO Worker] UI Culture: en-US
+[2025-01-09 10:54:40Z INFO Worker] Waiting to receive the job message from the channel.
+[2025-01-09 10:54:40Z INFO ProcessChannel] Receiving message of length 25916, with hash 'a64be26f396eab68d5761161b76598c2b6bdc5e70f5b437f1c6b67439d0c07f8'
+[2025-01-09 10:54:40Z INFO Worker] Message received.
+[2025-01-09 10:54:40Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/github-actions.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v2",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "a878fecf-9250-57e2-84e0-aae0213d4ecb",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 14,
+        "col": 19,
+        "lit": "Checkout submodules"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 15,
+              "col": 19,
+              "lit": "git submodule update --init --recursive"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "145553fb-1baa-5bc7-b18e-5469e21587f7",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 16,
+        "col": 19,
+        "lit": "Run unit test"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 17,
+              "col": 18,
+              "lit": "./unit-test.sh"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "8615dfaf-7ef8-510a-52bc-76337457853a",
+      "name": "__run_2"
+    }
+  ],
+  "variables": {
+    "system.isScheduled": {
+      "value": "False"
+    },
+    "system.servertype": {
+      "value": "Hosted"
+    },
+    "system.culture": {
+      "value": ""
+    },
+    "system.pipelineStartTime": {
+      "value": "2025-01-09 10:54:37+00:00"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "system.teamProjectId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "build.buildId": {
+      "value": "5"
+    },
+    "build.containerId": {
+      "value": "28458955"
+    },
+    "build.allowCreateArtifacts": {
+      "value": "False"
+    },
+    "system.workflowFilePath": {
+      "value": ".github/workflows/github-actions.yml"
+    },
+    "system.phaseDisplayName": {
+      "value": "unit-test"
+    },
+    "system.phaseId": {
+      "value": "f9b18aa4-1325-5d63-b757-65b914572d7c"
+    },
+    "system.phaseName": {
+      "value": "unit-test"
+    },
+    "system.phaseAttempt": {
+      "value": "1"
+    },
+    "system.jobIdentifier": {
+      "value": "unit-test.__default"
+    },
+    "system.jobAttempt": {
+      "value": "1"
+    },
+    "System.JobPositionInPhase": {
+      "value": "1"
+    },
+    "System.TotalJobsInPhase": {
+      "value": "1"
+    },
+    "system.github.job": {
+      "value": "unit-test"
+    },
+    "system.jobDisplayName": {
+      "value": "unit-test"
+    },
+    "system.jobId": {
+      "value": "0e10f8dd-85b5-5bee-19c6-47fc7db6f171"
+    },
+    "system.jobName": {
+      "value": "__default"
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Actions\":\"write\",\"Attestations\":\"write\",\"Checks\":\"write\",\"Contents\":\"write\",\"Deployments\":\"write\",\"Discussions\":\"write\",\"Issues\":\"write\",\"Metadata\":\"read\",\"Packages\":\"write\",\"Pages\":\"write\",\"PullRequests\":\"write\",\"RepositoryProjects\":\"write\",\"SecurityEvents\":\"write\",\"Statuses\":\"write\"}"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "True"
+    },
+    "system.testDotNet8Compatibility": {
+      "value": "true"
+    },
+    "system.dotNet8CompatibilityOutputLength": {
+      "value": "200"
+    },
+    "system.dotNet8CompatibilityOutputPattern": {
+      "value": "GLIBCXX"
+    },
+    "system.dotNet8CompatibilityWarning": {
+      "value": "The Actions runner will no longer support your OS version on November 1, 2024. Please upgrade to a supported version. For information, refer https://github.blog/changelog/2024-08-19-notice-of-upcoming-deprecations-and-breaking-changes-in-github-actions-runners/"
+    },
+    "system.orchestrationId": {
+      "value": "584e9d09-e56d-4905-af19-d38dec631368.unit-test.__default"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "Actions",
+    "version": 41,
+    "planId": "584e9d09-e56d-4905-af19-d38dec631368",
+    "planGroup": "Actions:00000000-0000-0000-0000-000000000000:1",
+    "artifactUri": "vstfs:///Build/Build/5",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {},
+      "id": 3,
+      "name": "assignment-2-Soha18"
+    },
+    "owner": {
+      "_links": {},
+      "id": 3,
+      "name": "cu-ecen-aeld"
+    }
+  },
+  "timeline": {
+    "id": "584e9d09-e56d-4905-af19-d38dec631368",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "0e10f8dd-85b5-5bee-19c6-47fc7db6f171",
+  "jobDisplayName": "unit-test",
+  "jobName": "__default",
+  "jobContainer": {
+    "type": 0,
+    "file": 1,
+    "line": 10,
+    "col": 20,
+    "lit": "cuaesd/aesd-autotest:24-unit-test"
+  },
+  "requestId": 10,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "3e396a8e-ac91-40cb-897d-a78e979119d6",
+          "ServerName": "kx9mDwBKW3VL6jIfUfTDLxlYQT43T3ApbzSXrntGqcflKKI3kf",
+          "CacheServerUrl": "https://acghubeus2.actions.githubusercontent.com/kx9mDwBKW3VL6jIfUfTDLxlYQT43T3ApbzSXrntGqcflKKI3kf/",
+          "FeedStreamUrl": "https://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "ConnectivityChecks": "[\"https://acghubeus0.actions.githubusercontent.com/_apis/health\",\"https://results-receiver.actions.githubusercontent.com/health\",\"https://pkg.actions.githubusercontent.com\",\"https://actions-results-receiver-production.githubapp.com/health\",\"https://pipelinesghubeus3.actions.githubusercontent.com/_apis/health\"]"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://pipelinesghubeus3.actions.githubusercontent.com/kx9mDwBKW3VL6jIfUfTDLxlYQT43T3ApbzSXrntGqcflKKI3kf/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "bb9d6dbd47b6b46a031ad538a024047b2cd51f09"
+        },
+        {
+          "k": "repository",
+          "v": "cu-ecen-aeld/assignment-2-Soha18"
+        },
+        {
+          "k": "repository_owner",
+          "v": "cu-ecen-aeld"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "49594950"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/cu-ecen-aeld/assignment-2-Soha18.git"
+        },
+        {
+          "k": "run_id",
+          "v": "12686764234"
+        },
+        {
+          "k": "run_number",
+          "v": "5"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "repo-self-hosted-runners-disabled",
+          "v": false
+        },
+        {
+          "k": "enterprise-managed-business-id",
+          "v": ""
+        },
+        {
+          "k": "repository_id",
+          "v": "913470345"
+        },
+        {
+          "k": "actor_id",
+          "v": "68910775"
+        },
+        {
+          "k": "actor",
+          "v": "Soha18"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "Soha18"
+        },
+        {
+          "k": "workflow",
+          "v": "assignment-test"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "bb9d6dbd47b6b46a031ad538a024047b2cd51f09"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "0c4600604158226a56ebb809a6be4cf5eb3f3cc2"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "sohasaleh@msn.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Soha18"
+                              },
+                              {
+                                "k": "username",
+                                "v": "Soha18"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "sohasaleh@msn.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Soha18"
+                              },
+                              {
+                                "k": "username",
+                                "v": "Soha18"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "bb9d6dbd47b6b46a031ad538a024047b2cd51f09"
+                        },
+                        {
+                          "k": "message",
+                          "v": "all steps were implemented"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2025-01-09T10:06:30+01:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "5cebb889c2b9df685e636e70a1968e97f7ef5c2c"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-Soha18/commit/bb9d6dbd47b6b46a031ad538a024047b2cd51f09"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/cu-ecen-aeld/assignment-2-Soha18/compare/0c4600604158...bb9d6dbd47b6"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "sohasaleh@msn.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Soha18"
+                          },
+                          {
+                            "k": "username",
+                            "v": "Soha18"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "sohasaleh@msn.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Soha18"
+                          },
+                          {
+                            "k": "username",
+                            "v": "Soha18"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "bb9d6dbd47b6b46a031ad538a024047b2cd51f09"
+                    },
+                    {
+                      "k": "message",
+                      "v": "all steps were implemented"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2025-01-09T10:06:30+01:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "5cebb889c2b9df685e636e70a1968e97f7ef5c2c"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-2-Soha18/commit/bb9d6dbd47b6b46a031ad538a024047b2cd51f09"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "organization",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/49594950?v=4"
+                    },
+                    {
+                      "k": "description",
+                      "v": "Course Github Organization for University of Colorado at Boulder ECEN 5713 Advanced Embedded Software Development (previously 5013-002)"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/events"
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/hooks"
+                    },
+                    {
+                      "k": "id",
+                      "v": 49594950.0
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/issues"
+                    },
+                    {
+                      "k": "login",
+                      "v": "cu-ecen-aeld"
+                    },
+                    {
+                      "k": "members_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/members{/member}"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDEyOk9yZ2FuaXphdGlvbjQ5NTk0OTUw"
+                    },
+                    {
+                      "k": "public_members_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/public_members{/member}"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/repos"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "68910775+Soha18@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "Soha18"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-2-Soha18.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1736275331.0
+                    },
+                    {
+                      "k": "custom_properties",
+                      "v": {
+                        "t": 2
+                      }
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": "assignment-2-Soha18 created by GitHub Classroom"
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "cu-ecen-aeld/assignment-2-Soha18"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/cu-ecen-aeld/assignment-2-Soha18.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-2-Soha18"
+                    },
+                    {
+                      "k": "id",
+                      "v": 913470345.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "Shell"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "key",
+                            "v": "mit"
+                          },
+                          {
+                            "k": "name",
+                            "v": "MIT License"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDc6TGljZW5zZTEz"
+                          },
+                          {
+                            "k": "spdx_id",
+                            "v": "MIT"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/licenses/mit"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "assignment-2-Soha18"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDONnJziQ"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "organization",
+                      "v": "cu-ecen-aeld"
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/49594950?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": null
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/cu-ecen-aeld"
+                          },
+                          {
+                            "k": "id",
+                            "v": 49594950.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "cu-ecen-aeld"
+                          },
+                          {
+                            "k": "name",
+                            "v": "cu-ecen-aeld"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDEyOk9yZ2FuaXphdGlvbjQ5NTk0OTUw"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "Organization"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1736413613.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 90802.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:cu-ecen-aeld/assignment-2-Soha18.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-2-Soha18"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-Soha18/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2025-01-08T20:02:44Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-2-Soha18"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/68910775?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/Soha18/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/Soha18/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/Soha18/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/Soha18/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/Soha18"
+                    },
+                    {
+                      "k": "id",
+                      "v": 68910775.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "Soha18"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjY4OTEwNzc1"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/Soha18/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/Soha18/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/Soha18/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/Soha18/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/Soha18/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/Soha18"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "workflow_ref",
+          "v": "cu-ecen-aeld/assignment-2-Soha18/.github/workflows/github-actions.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "bb9d6dbd47b6b46a031ad538a024047b2cd51f09"
+        }
+      ]
+    },
+    "run-feature-flags": {
+      "t": 2,
+      "d": [
+        {
+          "k": "actions_stream_logs_via_results_service",
+          "v": true
+        },
+        {
+          "k": "actions_use_results_service",
+          "v": true
+        },
+        {
+          "k": "actions_uses_cache_service_v2",
+          "v": false
+        },
+        {
+          "k": "block_artifacts_v3_exempted",
+          "v": false
+        },
+        {
+          "k": "larger_runners_custom_image_generation",
+          "v": false
+        }
+      ]
+    },
+    "partialrerun": false,
+    "needs": {
+      "t": 2
+    },
+    "vars": null,
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "EndpointsOverride": null
+  }
+}
+[2025-01-09 10:54:40Z INFO JobRunner] Job ID 0e10f8dd-85b5-5bee-19c6-47fc7db6f171
+[2025-01-09 10:54:40Z INFO ConfigurationStore] currentAssemblyLocation: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin/Runner.Worker.dll
+[2025-01-09 10:54:40Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:40Z INFO ConfigurationStore] binPath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin
+[2025-01-09 10:54:40Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:40Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:40Z INFO ConfigurationStore] RootFolder: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner
+[2025-01-09 10:54:40Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:40Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:40Z INFO HostContext] Well known config file 'Runner': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.runner'
+[2025-01-09 10:54:40Z INFO ConfigurationStore] ConfigFilePath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.runner
+[2025-01-09 10:54:40Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:40Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:40Z INFO HostContext] Well known config file 'Credentials': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials'
+[2025-01-09 10:54:40Z INFO ConfigurationStore] CredFilePath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials
+[2025-01-09 10:54:40Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:40Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:40Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_migrated'
+[2025-01-09 10:54:40Z INFO ConfigurationStore] MigratedCredFilePath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials_migrated
+[2025-01-09 10:54:40Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:40Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:40Z INFO HostContext] Well known config file 'Service': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.service'
+[2025-01-09 10:54:40Z INFO ConfigurationStore] ServiceConfigFilePath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.service
+[2025-01-09 10:54:40Z INFO ConfigurationStore] Read setting file: 308 chars
+[2025-01-09 10:54:40Z INFO JobRunner] Creating job server with URL: https://pipelinesghubeus3.actions.githubusercontent.com/kx9mDwBKW3VL6jIfUfTDLxlYQT43T3ApbzSXrntGqcflKKI3kf/
+[2025-01-09 10:54:41Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-09 10:54:41Z INFO Worker] Listening for cancel message from the channel.
+[2025-01-09 10:54:41Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2025-01-09 10:54:41Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-09 10:54:41Z INFO JobServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2025-01-09 10:54:41Z INFO JobServer] Attempting to start websocket client with delay 00:00:00.
+[2025-01-09 10:54:41Z INFO JobServerQueue] Initializing results client
+[2025-01-09 10:54:41Z INFO JobServerQueue] Start process web console line queue.
+[2025-01-09 10:54:41Z INFO JobServerQueue] Start process file upload queue.
+[2025-01-09 10:54:41Z INFO JobServerQueue] Start results file upload queue.
+[2025-01-09 10:54:41Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-01-09 10:54:41Z INFO JobServerQueue] Start process timeline update queue.
+[2025-01-09 10:54:41Z INFO ExecutionContext] Initialize GitHub context
+[2025-01-09 10:54:41Z INFO ExecutionContext] Initialize Env context
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:41Z INFO JobRunner] Starting the job execution context.
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:41Z INFO JobRunner] Validating directory permissions for: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Tools': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_tool'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Temp': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp'
+[2025-01-09 10:54:41Z INFO JobRunner] Getting job extension.
+[2025-01-09 10:54:41Z INFO JobRunner] Initialize job. Getting all job steps.
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:41Z INFO HostContext] Well known config file 'Credentials': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.credentials'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:41Z INFO HostContext] Well known config file 'SetupInfo': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/.setup_info'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:41Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:41Z INFO PipelineDirectoryManager] Loading tracking config if exists: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_PipelineMapping/cu-ecen-aeld/assignment-2-Soha18/PipelineFolder.json
+[2025-01-09 10:54:42Z INFO PipelineDirectoryManager] Updating job run properties.
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Tools': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_tool'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Externals': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/externals'
+[2025-01-09 10:54:42Z INFO JobExtension] Downloading actions
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Actions': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Actions': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Actions': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions'
+[2025-01-09 10:54:42Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/tarball/ee0669bd1cc54295c223e0bb666b733df41de1c5' into /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions/_temp_f51fc4c4-3b6e-4064-b844-af645a92f8cb/2ee4bacd-778e-41e9-af9d-15d0509753f7.tar.gz.
+[2025-01-09 10:54:42Z INFO JobServer] Successfully started websocket client.
+[2025-01-09 10:54:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f97d1816-9b8e-4c96-be24-de5db5cb003d', success rate: 1/1.
+[2025-01-09 10:54:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f97d1816-9b8e-4c96-be24-de5db5cb003d', success rate: 1/1.
+[2025-01-09 10:54:42Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/checkout/tarball/ee0669bd1cc54295c223e0bb666b733df41de1c5 X-GitHub-Request-Id: FE34:F3BA6:1E39CE:248441:677FAAF2 Http Status: OK
+[2025-01-09 10:54:42Z INFO ActionManager] Which2: 'tar'
+[2025-01-09 10:54:42Z INFO ActionManager] Location: '/usr/bin/tar'
+[2025-01-09 10:54:42Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:42Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/tar'
+[2025-01-09 10:54:42Z INFO ProcessInvokerWrapper]   Arguments: '-xzf "/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions/_temp_f51fc4c4-3b6e-4064-b844-af645a92f8cb/2ee4bacd-778e-41e9-af9d-15d0509753f7.tar.gz"'
+[2025-01-09 10:54:42Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions/_temp_f51fc4c4-3b6e-4064-b844-af645a92f8cb/_staging'
+[2025-01-09 10:54:42Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:54:42Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:42Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:42Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:42Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:42Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:42Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:42Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89166.
+[2025-01-09 10:54:42Z INFO ProcessInvokerWrapper] Process started with process id 89166, waiting for process exit.
+[2025-01-09 10:54:42Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:42Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:42Z INFO ProcessInvokerWrapper] Finished process 89166 with exit code 0, and elapsed time 00:00:00.0177340.
+[2025-01-09 10:54:42Z INFO ActionManager] Finished getting action repository.
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Actions': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions'
+[2025-01-09 10:54:42Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Actions': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions'
+[2025-01-09 10:54:42Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-01-09 10:54:42Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Actions': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions'
+[2025-01-09 10:54:42Z INFO ActionManager] Load action that reference repository from '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions/actions/checkout/v2'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Actions': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions'
+[2025-01-09 10:54:42Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-01-09 10:54:42Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-01-09 10:54:42Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-01-09 10:54:42Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-01-09 10:54:42Z INFO DockerCommandManager] Which2: 'docker'
+[2025-01-09 10:54:42Z INFO DockerCommandManager] Location: '/usr/bin/docker'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO JobExtension] Adding .
+[2025-01-09 10:54:42Z INFO JobExtension] Adding .
+[2025-01-09 10:54:42Z INFO JobExtension] Adding .
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:42Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:43Z INFO JobExtension] Total accessible running process: 382.
+[2025-01-09 10:54:43Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:43Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:43Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:43Z INFO JobExtension] Start checking server connectivity.
+[2025-01-09 10:54:43Z INFO JobExtension] Check server connectivity for https://acghubeus0.actions.githubusercontent.com/_apis/health.
+[2025-01-09 10:54:43Z INFO JobExtension] Check server connectivity for https://results-receiver.actions.githubusercontent.com/health.
+[2025-01-09 10:54:43Z INFO JobExtension] Check server connectivity for https://pkg.actions.githubusercontent.com.
+[2025-01-09 10:54:43Z INFO JobExtension] Check server connectivity for https://actions-results-receiver-production.githubapp.com/health.
+[2025-01-09 10:54:43Z INFO JobExtension] Check server connectivity for https://pipelinesghubeus3.actions.githubusercontent.com/_apis/health.
+[2025-01-09 10:54:43Z INFO JobExtension] Start checking service connectivity in background.
+[2025-01-09 10:54:43Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "f97d1816-9b8e-4c96-be24-de5db5cb003d",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 2,
+  "startTime": "2025-01-09T10:54:41.9897858Z",
+  "finishTime": "2025-01-09T10:54:43.0671246Z"
+}.
+[2025-01-09 10:54:43Z INFO JobRunner] Total job steps: 4.
+[2025-01-09 10:54:43Z INFO JobRunner] Run all job steps.
+[2025-01-09 10:54:43Z INFO StepsRunner] Processing step: DisplayName='Initialize containers'
+[2025-01-09 10:54:43Z INFO StepsRunner] Evaluating: success()
+[2025-01-09 10:54:43Z INFO StepsRunner] Result: true
+[2025-01-09 10:54:43Z INFO StepsRunner] Starting the step.
+[2025-01-09 10:54:43Z INFO ExecutionContext] Reserve record order 6 to 10 for post job actions.
+[2025-01-09 10:54:43Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:43Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:43Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:43Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:43Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:43Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Arguments: 'version --format '{{.Server.APIVersion}}''
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/assignment-2-Soha18/assignment-2-Soha18'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89170.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Process started with process id 89170, waiting for process exit.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Finished process 89170 with exit code 0, and elapsed time 00:00:00.0229760.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Arguments: 'version --format '{{.Client.APIVersion}}''
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/assignment-2-Soha18/assignment-2-Soha18'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89189.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Process started with process id 89189, waiting for process exit.
+[2025-01-09 10:54:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f97d1816-9b8e-4c96-be24-de5db5cb003d', success rate: 1/1.
+[2025-01-09 10:54:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '551c09f4-f44a-4e03-aa96-60d417bc731c', success rate: 1/1.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Finished process 89189 with exit code 0, and elapsed time 00:00:00.0201271.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Arguments: 'ps --all --quiet --no-trunc --filter "label=966fcb"'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/assignment-2-Soha18/assignment-2-Soha18'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89208.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Process started with process id 89208, waiting for process exit.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Finished process 89208 with exit code 0, and elapsed time 00:00:00.0152350.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Arguments: 'network prune --force --filter "label=966fcb"'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/assignment-2-Soha18/assignment-2-Soha18'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89220.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Process started with process id 89220, waiting for process exit.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Finished process 89220 with exit code 0, and elapsed time 00:00:00.0148775.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Arguments: 'network create --label 966fcb github_network_1287406d7e2f41b1aa9687678813176b'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/assignment-2-Soha18/assignment-2-Soha18'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89232.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Process started with process id 89232, waiting for process exit.
+[2025-01-09 10:54:43Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Finished process 89232 with exit code 0, and elapsed time 00:00:00.1319048.
+[2025-01-09 10:54:43Z INFO ContainerOperationProvider] Container name: d943cee1f1664ddea233889e5f4a8f6e
+[2025-01-09 10:54:43Z INFO ContainerOperationProvider] Container image: cuaesd/aesd-autotest:24-unit-test
+[2025-01-09 10:54:43Z INFO ContainerOperationProvider] Container options: 
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Arguments: 'pull cuaesd/aesd-autotest:24-unit-test'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/assignment-2-Soha18/assignment-2-Soha18'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89298.
+[2025-01-09 10:54:43Z INFO ProcessInvokerWrapper] Process started with process id 89298, waiting for process exit.
+[2025-01-09 10:54:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '551c09f4-f44a-4e03-aa96-60d417bc731c', success rate: 1/1.
+[2025-01-09 10:54:43Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-01-09 10:54:43Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag/blocks/584e9d09-e56d-4905-af19-d38dec631368_f97d1816-9b8e-4c96-be24-de5db5cb003d.1
+[2025-01-09 10:54:44Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-01-09 10:54:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:44Z INFO ProcessInvokerWrapper] Finished process 89298 with exit code 0, and elapsed time 00:00:01.5955753.
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Externals': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/externals'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Externals': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/externals'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Temp': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Temp': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Actions': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Actions': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Tools': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_tool'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Tools': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_tool'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Temp': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:44Z INFO HostContext] Well known directory 'Temp': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp'
+[2025-01-09 10:54:44Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-01-09 10:54:44Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:44Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:44Z INFO ProcessInvokerWrapper]   Arguments: 'create --name d943cee1f1664ddea233889e5f4a8f6e_cuaesdaesdautotest24unittest_cf70b2 --label 966fcb --workdir /__w/assignment-2-Soha18/assignment-2-Soha18 --network github_network_1287406d7e2f41b1aa9687678813176b  -e "HOME=/github/home" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work":"/__w" -v "/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/externals":"/__e":ro -v "/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp":"/__w/_temp" -v "/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions":"/__w/_actions" -v "/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_tool":"/__w/_tool" -v "/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp/_github_home":"/github/home" -v "/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp/_github_workflow":"/github/workflow" --entrypoint "tail" cuaesd/aesd-autotest:24-unit-test "-f" "/dev/null"'
+[2025-01-09 10:54:44Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/assignment-2-Soha18/assignment-2-Soha18'
+[2025-01-09 10:54:44Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2025-01-09 10:54:44Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:44Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:44Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:44Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:44Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:44Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:44Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89314.
+[2025-01-09 10:54:44Z INFO ProcessInvokerWrapper] Process started with process id 89314, waiting for process exit.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Finished process 89314 with exit code 0, and elapsed time 00:00:00.0727120.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Arguments: 'start 1deb984ddc8b27c49a516e0cfe134ced59b556f9e27910b3026d9f0c7e6aa219'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/assignment-2-Soha18/assignment-2-Soha18'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89326.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Process started with process id 89326, waiting for process exit.
+[2025-01-09 10:54:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '551c09f4-f44a-4e03-aa96-60d417bc731c', success rate: 1/1.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Finished process 89326 with exit code 0, and elapsed time 00:00:00.2348504.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Arguments: 'ps --all --filter id=1deb984ddc8b27c49a516e0cfe134ced59b556f9e27910b3026d9f0c7e6aa219 --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/assignment-2-Soha18/assignment-2-Soha18'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89429.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Process started with process id 89429, waiting for process exit.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Finished process 89429 with exit code 0, and elapsed time 00:00:00.0170543.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Arguments: 'inspect --format "{{range .Config.Env}}{{println .}}{{end}}" 1deb984ddc8b27c49a516e0cfe134ced59b556f9e27910b3026d9f0c7e6aa219'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/assignment-2-Soha18/assignment-2-Soha18'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89441.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Process started with process id 89441, waiting for process exit.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Finished process 89441 with exit code 0, and elapsed time 00:00:00.0168693.
+[2025-01-09 10:54:45Z INFO StepsRunner] Step result: 
+[2025-01-09 10:54:45Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "initialize_containers",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "551c09f4-f44a-4e03-aa96-60d417bc731c",
+  "stepContextName": "551c09f4f44a4e03aa9660d417bc731c",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 3,
+  "startTime": "2025-01-09T10:54:43.078707Z",
+  "finishTime": "2025-01-09T10:54:45.3130529Z"
+}.
+[2025-01-09 10:54:45Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-01-09 10:54:45Z INFO StepsRunner] Current state: job state = ''
+[2025-01-09 10:54:45Z INFO StepsRunner] Processing step: DisplayName='Run actions/checkout@v2'
+[2025-01-09 10:54:45Z INFO StepsRunner] Evaluating: success()
+[2025-01-09 10:54:45Z INFO StepsRunner] Result: true
+[2025-01-09 10:54:45Z INFO StepsRunner] Starting the step.
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Actions': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions'
+[2025-01-09 10:54:45Z INFO ActionManager] Load action that reference repository from '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions/actions/checkout/v2'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Actions': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions'
+[2025-01-09 10:54:45Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-01-09 10:54:45Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-01-09 10:54:45Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-01-09 10:54:45Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Temp': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp'
+[2025-01-09 10:54:45Z INFO ExecutionContext] Write event payload to /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp/_github_workflow/event.json
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Temp': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp'
+[2025-01-09 10:54:45Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2025-01-09 10:54:45Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "cu-ecen-aeld/assignment-2-Soha18"
+}
+[2025-01-09 10:54:45Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-01-09 10:54:45Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-01-09 10:54:45Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-01-09 10:54:45Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-01-09 10:54:45Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-01-09 10:54:45Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2025-01-09 10:54:45Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-01-09 10:54:45Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2025-01-09 10:54:45Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2025-01-09 10:54:45Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2025-01-09 10:54:45Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2025-01-09 10:54:45Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2025-01-09 10:54:45Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2025-01-09 10:54:45Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2025-01-09 10:54:45Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-01-09 10:54:45Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-01-09 10:54:45Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-01-09 10:54:45Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-01-09 10:54:45Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-01-09 10:54:45Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-01-09 10:54:45Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-01-09 10:54:45Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-01-09 10:54:45Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-01-09 10:54:45Z INFO ActionCommandManager] Register action command extension for command error
+[2025-01-09 10:54:45Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-01-09 10:54:45Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-01-09 10:54:45Z INFO ActionCommandManager] Register action command extension for command group
+[2025-01-09 10:54:45Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-01-09 10:54:45Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Arguments: 'exec  1deb984ddc8b27c49a516e0cfe134ced59b556f9e27910b3026d9f0c7e6aa219 sh -c "cat /etc/*release | grep ^ID"'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89453.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Process started with process id 89453, waiting for process exit.
+[2025-01-09 10:54:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '551c09f4-f44a-4e03-aa96-60d417bc731c', success rate: 1/1.
+[2025-01-09 10:54:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Finished process 89453 with exit code 0, and elapsed time 00:00:00.0558018.
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Externals': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/externals'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:45Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Arguments: 'exec -i --workdir /__w/assignment-2-Soha18/assignment-2-Soha18 -e "INPUT_REPOSITORY" -e "INPUT_REF" -e "INPUT_TOKEN" -e "INPUT_SSH-KEY" -e "INPUT_SSH-KNOWN-HOSTS" -e "INPUT_SSH-STRICT" -e "INPUT_PERSIST-CREDENTIALS" -e "INPUT_PATH" -e "INPUT_CLEAN" -e "INPUT_FETCH-DEPTH" -e "INPUT_LFS" -e "INPUT_SUBMODULES" -e "INPUT_SET-SAFE-DIRECTORY" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_RESULTS_URL" 1deb984ddc8b27c49a516e0cfe134ced59b556f9e27910b3026d9f0c7e6aa219 /__e/node20/bin/node /__w/_actions/actions/checkout/v2/dist/index.js'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89485.
+[2025-01-09 10:54:45Z INFO ProcessInvokerWrapper] Process started with process id 89485, waiting for process exit.
+[2025-01-09 10:54:45Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2025-01-09 10:54:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2025-01-09 10:54:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2025-01-09 10:54:45Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-01-09 10:54:45Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag/blocks/584e9d09-e56d-4905-af19-d38dec631368_551c09f4-f44a-4e03-aa96-60d417bc731c.1
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper] Finished process 89485 with exit code 0, and elapsed time 00:00:00.8264817.
+[2025-01-09 10:54:46Z INFO CreateStepSummaryCommand] Step Summary file (/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp/_runner_file_commands/step_summary_03fb5d0f-cfee-4cb1-914b-dec0e44ab083) is empty; skipping attachment upload
+[2025-01-09 10:54:46Z INFO StepsRunner] Step result: 
+[2025-01-09 10:54:46Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v2",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "a878fecf-9250-57e2-84e0-aae0213d4ecb",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-01-09T10:54:45.3150834Z",
+  "finishTime": "2025-01-09T10:54:46.2526871Z"
+}.
+[2025-01-09 10:54:46Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-01-09 10:54:46Z INFO StepsRunner] Current state: job state = ''
+[2025-01-09 10:54:46Z INFO StepsRunner] Processing step: DisplayName='Checkout submodules'
+[2025-01-09 10:54:46Z INFO StepsRunner] Evaluating: success()
+[2025-01-09 10:54:46Z INFO StepsRunner] Result: true
+[2025-01-09 10:54:46Z INFO StepsRunner] Starting the step.
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Temp': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp'
+[2025-01-09 10:54:46Z INFO ExecutionContext] Write event payload to /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp/_github_workflow/event.json
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Temp': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp'
+[2025-01-09 10:54:46Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-01-09 10:54:46Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command error
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command group
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Temp': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp'
+[2025-01-09 10:54:46Z INFO ScriptHandler] Which2: 'bash'
+[2025-01-09 10:54:46Z INFO ScriptHandler] Location: '/usr/bin/bash'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   Arguments: 'exec -i --workdir /__w/assignment-2-Soha18/assignment-2-Soha18 -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" 1deb984ddc8b27c49a516e0cfe134ced59b556f9e27910b3026d9f0c7e6aa219 sh -e /__w/_temp/09a1dce2-d685-41f3-acd3-b115231000dd.sh'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89621.
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper] Process started with process id 89621, waiting for process exit.
+[2025-01-09 10:54:46Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-01-09 10:54:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a878fecf-9250-57e2-84e0-aae0213d4ecb', success rate: 1/1.
+[2025-01-09 10:54:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record '145553fb-1baa-5bc7-b18e-5469e21587f7', success rate: 1/1.
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper] Finished process 89621 with exit code 0, and elapsed time 00:00:00.1321379.
+[2025-01-09 10:54:46Z INFO CreateStepSummaryCommand] Step Summary file (/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp/_runner_file_commands/step_summary_f8cd1efd-e305-4464-9173-5a5fc7417097) is empty; skipping attachment upload
+[2025-01-09 10:54:46Z INFO StepsRunner] Step result: 
+[2025-01-09 10:54:46Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "sh",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "145553fb-1baa-5bc7-b18e-5469e21587f7",
+  "stepContextName": "__run",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-01-09T10:54:46.2548404Z",
+  "finishTime": "2025-01-09T10:54:46.4128214Z"
+}.
+[2025-01-09 10:54:46Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-01-09 10:54:46Z INFO StepsRunner] Current state: job state = ''
+[2025-01-09 10:54:46Z INFO StepsRunner] Processing step: DisplayName='Run unit test'
+[2025-01-09 10:54:46Z INFO StepsRunner] Evaluating: success()
+[2025-01-09 10:54:46Z INFO StepsRunner] Result: true
+[2025-01-09 10:54:46Z INFO StepsRunner] Starting the step.
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Temp': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp'
+[2025-01-09 10:54:46Z INFO ExecutionContext] Write event payload to /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp/_github_workflow/event.json
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Temp': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp'
+[2025-01-09 10:54:46Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-01-09 10:54:46Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command error
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command group
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-01-09 10:54:46Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Temp': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp'
+[2025-01-09 10:54:46Z INFO ScriptHandler] Which2: 'bash'
+[2025-01-09 10:54:46Z INFO ScriptHandler] Location: '/usr/bin/bash'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:46Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   Arguments: 'exec -i --workdir /__w/assignment-2-Soha18/assignment-2-Soha18 -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" 1deb984ddc8b27c49a516e0cfe134ced59b556f9e27910b3026d9f0c7e6aa219 sh -e /__w/_temp/9b46eb42-cfb4-482b-a485-6d03fc53b612.sh'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89703.
+[2025-01-09 10:54:46Z INFO ProcessInvokerWrapper] Process started with process id 89703, waiting for process exit.
+[2025-01-09 10:54:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2025-01-09 10:54:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2025-01-09 10:54:47Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2025-01-09 10:54:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2025-01-09 10:54:47Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-01-09 10:54:47Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag/blocks/584e9d09-e56d-4905-af19-d38dec631368_a878fecf-9250-57e2-84e0-aae0213d4ecb.1
+[2025-01-09 10:54:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] Finished process 89703 with exit code 0, and elapsed time 00:00:01.0602581.
+[2025-01-09 10:54:47Z INFO CreateStepSummaryCommand] Step Summary file (/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp/_runner_file_commands/step_summary_bd9edf33-4cc6-432c-8e90-5ccb2714842f) is empty; skipping attachment upload
+[2025-01-09 10:54:47Z INFO StepsRunner] Step result: 
+[2025-01-09 10:54:47Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "sh",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "8615dfaf-7ef8-510a-52bc-76337457853a",
+  "stepContextName": "__run_2",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 2,
+  "startTime": "2025-01-09T10:54:46.4143049Z",
+  "finishTime": "2025-01-09T10:54:47.4894698Z"
+}.
+[2025-01-09 10:54:47Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-01-09 10:54:47Z INFO StepsRunner] Current state: job state = ''
+[2025-01-09 10:54:47Z INFO StepsRunner] Processing step: DisplayName='Post Run actions/checkout@v2'
+[2025-01-09 10:54:47Z INFO StepsRunner] Evaluating: always()
+[2025-01-09 10:54:47Z INFO StepsRunner] Result: true
+[2025-01-09 10:54:47Z INFO StepsRunner] Starting the step.
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Actions': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions'
+[2025-01-09 10:54:47Z INFO ActionManager] Load action that reference repository from '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions/actions/checkout/v2'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Actions': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_actions'
+[2025-01-09 10:54:47Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-01-09 10:54:47Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-01-09 10:54:47Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-01-09 10:54:47Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Temp': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp'
+[2025-01-09 10:54:47Z INFO ExecutionContext] Write event payload to /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp/_github_workflow/event.json
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Temp': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp'
+[2025-01-09 10:54:47Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-01-09 10:54:47Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "cu-ecen-aeld/assignment-2-Soha18"
+}
+[2025-01-09 10:54:47Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-01-09 10:54:47Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-01-09 10:54:47Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-01-09 10:54:47Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-01-09 10:54:47Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-01-09 10:54:47Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2025-01-09 10:54:47Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-01-09 10:54:47Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2025-01-09 10:54:47Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2025-01-09 10:54:47Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2025-01-09 10:54:47Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2025-01-09 10:54:47Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2025-01-09 10:54:47Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-01-09 10:54:47Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-01-09 10:54:47Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-01-09 10:54:47Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-01-09 10:54:47Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-01-09 10:54:47Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-01-09 10:54:47Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-01-09 10:54:47Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-01-09 10:54:47Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-01-09 10:54:47Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-01-09 10:54:47Z INFO ActionCommandManager] Register action command extension for command error
+[2025-01-09 10:54:47Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-01-09 10:54:47Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-01-09 10:54:47Z INFO ActionCommandManager] Register action command extension for command group
+[2025-01-09 10:54:47Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-01-09 10:54:47Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Arguments: 'exec  1deb984ddc8b27c49a516e0cfe134ced59b556f9e27910b3026d9f0c7e6aa219 sh -c "cat /etc/*release | grep ^ID"'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89874.
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] Process started with process id 89874, waiting for process exit.
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] Finished process 89874 with exit code 0, and elapsed time 00:00:00.0741357.
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Externals': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/externals'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:47Z INFO HostContext] Well known directory 'Work': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Arguments: 'exec -i --workdir /__w/assignment-2-Soha18/assignment-2-Soha18 -e "STATE_isPost" -e "STATE_setSafeDirectory" -e "STATE_repositoryPath" -e "INPUT_REPOSITORY" -e "INPUT_REF" -e "INPUT_TOKEN" -e "INPUT_SSH-KEY" -e "INPUT_SSH-KNOWN-HOSTS" -e "INPUT_SSH-STRICT" -e "INPUT_PERSIST-CREDENTIALS" -e "INPUT_PATH" -e "INPUT_CLEAN" -e "INPUT_FETCH-DEPTH" -e "INPUT_LFS" -e "INPUT_SUBMODULES" -e "INPUT_SET-SAFE-DIRECTORY" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_RESULTS_URL" 1deb984ddc8b27c49a516e0cfe134ced59b556f9e27910b3026d9f0c7e6aa219 /__e/node20/bin/node /__w/_actions/actions/checkout/v2/dist/index.js'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 89905.
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] Process started with process id 89905, waiting for process exit.
+[2025-01-09 10:54:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8615dfaf-7ef8-510a-52bc-76337457853a', success rate: 1/1.
+[2025-01-09 10:54:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f89f96bb-d323-44d0-ae0a-49bcdf74ed9c', success rate: 1/1.
+[2025-01-09 10:54:47Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2025-01-09 10:54:47Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-01-09 10:54:47Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag/blocks/584e9d09-e56d-4905-af19-d38dec631368_145553fb-1baa-5bc7-b18e-5469e21587f7.1
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] Finished process 89905 with exit code 0, and elapsed time 00:00:00.2838427.
+[2025-01-09 10:54:47Z INFO CreateStepSummaryCommand] Step Summary file (/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp/_runner_file_commands/step_summary_ba6389b6-1c39-45f4-bed1-3ab16a8d055b) is empty; skipping attachment upload
+[2025-01-09 10:54:47Z INFO StepsRunner] Step result: 
+[2025-01-09 10:54:47Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v2",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "f89f96bb-d323-44d0-ae0a-49bcdf74ed9c",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-01-09T10:54:47.4901766Z",
+  "finishTime": "2025-01-09T10:54:47.861258Z"
+}.
+[2025-01-09 10:54:47Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-01-09 10:54:47Z INFO StepsRunner] Current state: job state = ''
+[2025-01-09 10:54:47Z INFO StepsRunner] Processing step: DisplayName='Stop containers'
+[2025-01-09 10:54:47Z INFO StepsRunner] Evaluating: always()
+[2025-01-09 10:54:47Z INFO StepsRunner] Result: true
+[2025-01-09 10:54:47Z INFO StepsRunner] Starting the step.
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Arguments: 'rm --force 1deb984ddc8b27c49a516e0cfe134ced59b556f9e27910b3026d9f0c7e6aa219'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/assignment-2-Soha18/assignment-2-Soha18'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 90021.
+[2025-01-09 10:54:47Z INFO ProcessInvokerWrapper] Process started with process id 90021, waiting for process exit.
+[2025-01-09 10:54:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f89f96bb-d323-44d0-ae0a-49bcdf74ed9c', success rate: 1/1.
+[2025-01-09 10:54:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '52a2d53d-a414-46fd-aa91-1829eb87084a', success rate: 1/1.
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper] Finished process 90021 with exit code 0, and elapsed time 00:00:00.1478653.
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper]   Arguments: 'network rm github_network_1287406d7e2f41b1aa9687678813176b'
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper]   Working directory: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/assignment-2-Soha18/assignment-2-Soha18'
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 90059.
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper] Process started with process id 90059, waiting for process exit.
+[2025-01-09 10:54:48Z ERR  JobExtension] Request timeout during connectivity check: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at GitHub.Runner.Worker.JobExtension.CheckConnectivity(String endpointUrl, String accessToken, Int32 timeoutInSeconds, CancellationToken token)
+[2025-01-09 10:54:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '52a2d53d-a414-46fd-aa91-1829eb87084a', success rate: 1/1.
+[2025-01-09 10:54:48Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-09 10:54:48Z INFO ProcessInvokerWrapper] Finished process 90059 with exit code 0, and elapsed time 00:00:00.2657777.
+[2025-01-09 10:54:48Z INFO StepsRunner] Step result: 
+[2025-01-09 10:54:48Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-01-09 10:54:48Z INFO StepsRunner] Current state: job state = ''
+[2025-01-09 10:54:48Z INFO JobRunner] Finalize job.
+[2025-01-09 10:54:48Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:48Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:48Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:48Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:48Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:48Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:48Z INFO JobExtension] Initialize Env context
+[2025-01-09 10:54:48Z INFO JobExtension] Initialize steps context
+[2025-01-09 10:54:48Z INFO JobExtension] Total accessible running process: 415.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 44 (kworker/4:0H-kblockd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/44/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/44/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 87 (kworker/0:1H-kblockd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/87/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/87/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 146 (kworker/2:1H-kblockd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/146/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/146/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 159 (kworker/6:1H-events_highpri)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/159/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/159/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 160 (kworker/7:1H-kblockd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/160/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/160/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 79884 (kworker/0:0-events)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/79884/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/79884/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 82300 (kworker/u16:3-flush-259:0)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/82300/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/82300/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 83415 (kworker/3:2-rcu_gp)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/83415/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/83415/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 83707 (kworker/u16:4-writeback)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/83707/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/83707/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 83868 (kworker/3:0-events)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/83868/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/83868/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 84264 (kworker/1:0-events)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/84264/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/84264/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 84932 (kworker/u16:6-writeback)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/84932/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/84932/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 85255 (kworker/5:1-rcu_gp)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/85255/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/85255/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89244 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89244/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89244/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89252 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89252/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89252/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89276 (nm-dispatcher)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89276/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89276/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89339 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89339/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89339/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89340 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89340/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89340/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89341 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89341/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89341/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89342 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89342/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89342/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89343 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89343/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89343/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89344 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89344/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89344/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89345 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89345/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89345/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89346 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89346/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89346/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89347 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89347/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89347/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89348 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89348/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89348/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89349 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89349/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89349/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89350 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89350/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89350/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89351 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89351/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89351/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89352 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89352/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89352/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89353 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89353/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89353/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89354 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89354/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89354/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89355 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89355/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89355/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89356 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89356/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89356/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89357 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89357/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89357/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89358 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89358/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89358/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89359 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89359/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89359/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89360 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89360/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89360/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89361 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89361/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89361/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89362 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89362/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89362/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89363 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89363/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89363/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89364 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '52a2d53d-a414-46fd-aa91-1829eb87084a', success rate: 1/1.
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89364/environ
+[2025-01-09 10:54:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'dc54ed6c-81f3-407a-b925-103c70c620b7', success rate: 1/1.
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89364/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89365 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89365/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89365/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89366 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89366/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89366/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 89367 (systemd-udevd)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/89367/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/89367/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Inspecting process environment variables. PID: 90058 (kworker/3:3)
+[2025-01-09 10:54:48Z INFO LinuxProcessExtensions] Read env from /proc/90058/environ
+[2025-01-09 10:54:48Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/90058/environ' is denied.
+[2025-01-09 10:54:48Z INFO JobExtension] Wait for all connectivity checks to finish.
+[2025-01-09 10:54:48Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2025-01-09 10:54:48Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2025-01-09 10:54:48Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2025-01-09 10:54:48Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2025-01-09 10:54:48Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2025-01-09 10:54:48Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "dc54ed6c-81f3-407a-b925-103c70c620b7",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-01-09T10:54:48.296356Z",
+  "finishTime": "2025-01-09T10:54:48.4136523Z"
+}.
+[2025-01-09 10:54:48Z INFO JobRunner] Job result after all job steps finish: Succeeded
+[2025-01-09 10:54:48Z INFO JobRunner] Completing the job execution context.
+[2025-01-09 10:54:48Z INFO JobRunner] Shutting down the job server queue.
+[2025-01-09 10:54:48Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-01-09 10:54:48Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2025-01-09 10:54:49Z INFO JobServerQueue] All queue process task stopped.
+[2025-01-09 10:54:49Z INFO JobServerQueue] Web console line queue drained.
+[2025-01-09 10:54:49Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2025-01-09 10:54:51Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2025-01-09 10:54:51Z INFO JobServerQueue] File upload queue drained.
+[2025-01-09 10:54:51Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-01-09 10:54:51Z INFO JobServerQueue] Uploading 5 file(s) in one shot through results service.
+[2025-01-09 10:54:51Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-01-09 10:54:51Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag/blocks/584e9d09-e56d-4905-af19-d38dec631368_8615dfaf-7ef8-510a-52bc-76337457853a.1
+[2025-01-09 10:54:51Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-01-09 10:54:51Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag/blocks/584e9d09-e56d-4905-af19-d38dec631368_f89f96bb-d323-44d0-ae0a-49bcdf74ed9c.1
+[2025-01-09 10:54:52Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-01-09 10:54:52Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag/blocks/584e9d09-e56d-4905-af19-d38dec631368_52a2d53d-a414-46fd-aa91-1829eb87084a.1
+[2025-01-09 10:54:52Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-01-09 10:54:52Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag/blocks/584e9d09-e56d-4905-af19-d38dec631368_dc54ed6c-81f3-407a-b925-103c70c620b7.1
+[2025-01-09 10:54:53Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-01-09 10:54:53Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag/blocks/584e9d09-e56d-4905-af19-d38dec631368_0e10f8dd-85b5-5bee-19c6-47fc7db6f171.1
+[2025-01-09 10:54:53Z INFO JobServerQueue] Tried to upload 5 file(s) to results, success rate: 5/5.
+[2025-01-09 10:54:53Z INFO JobServerQueue] Results upload queue drained.
+[2025-01-09 10:54:54Z INFO JobServerQueue] Timeline update queue drained.
+[2025-01-09 10:54:54Z INFO JobServerQueue] Disposing job server ...
+[2025-01-09 10:54:54Z INFO JobServerQueue] Disposing results server ...
+[2025-01-09 10:54:54Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-01-09 10:54:54Z INFO JobServerQueue] Actions upload time: 3519 ms, Result upload time: 4677 ms
+[2025-01-09 10:54:54Z INFO TempDirectoryManager] Cleaning runner temp folder: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_work/_temp
+[2025-01-09 10:54:54Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/bin'
+[2025-01-09 10:54:54Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner'
+[2025-01-09 10:54:54Z INFO HostContext] Well known directory 'Diag': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag'
+[2025-01-09 10:54:54Z INFO HostContext] Well known config file 'Telemetry': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/actions-runner/_diag/.telemetry'
+[2025-01-09 10:54:54Z INFO JobRunner] Raising job completed event
+[2025-01-09 10:54:54Z INFO Worker] Job completed.
