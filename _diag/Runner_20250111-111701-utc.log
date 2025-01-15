@@ -1,0 +1,73 @@
+[2025-01-11 11:17:01Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-01-11 11:17:01Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/bin'
+[2025-01-11 11:17:01Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18'
+[2025-01-11 11:17:01Z INFO HostContext] Well known config file 'Credentials': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/.credentials'
+[2025-01-11 11:17:01Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/bin'
+[2025-01-11 11:17:01Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18'
+[2025-01-11 11:17:01Z INFO HostContext] Well known config file 'Runner': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/.runner'
+[2025-01-11 11:17:01Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2025-01-11 11:17:01Z INFO Listener] RuntimeInformation: Ubuntu 22.04.5 LTS.
+[2025-01-11 11:17:02Z INFO Listener] Version: 2.321.0
+[2025-01-11 11:17:02Z INFO Listener] Commit: e249007931b7c8e857797fa259c167f0bd4f997a
+[2025-01-11 11:17:02Z INFO Listener] Culture: en-US
+[2025-01-11 11:17:02Z INFO Listener] UI Culture: en-US
+[2025-01-11 11:17:02Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/bin'
+[2025-01-11 11:17:02Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18'
+[2025-01-11 11:17:02Z INFO Listener] Validating directory permissions for: '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18'
+[2025-01-11 11:17:02Z INFO CommandLineParser] Parse
+[2025-01-11 11:17:02Z INFO CommandLineParser] Parsing 3 args
+[2025-01-11 11:17:02Z INFO CommandLineParser] parsing argument
+[2025-01-11 11:17:02Z INFO CommandLineParser] HasArgs: False
+[2025-01-11 11:17:02Z INFO CommandLineParser] Adding Command: remove
+[2025-01-11 11:17:02Z INFO CommandLineParser] parsing argument
+[2025-01-11 11:17:02Z INFO CommandLineParser] HasArgs: True
+[2025-01-11 11:17:02Z INFO CommandLineParser] arg: token
+[2025-01-11 11:17:02Z INFO CommandLineParser] parsing argument
+[2025-01-11 11:17:02Z INFO CommandLineParser] HasArgs: True
+[2025-01-11 11:17:02Z INFO CommandLineParser] Adding option 'token': '***'
+[2025-01-11 11:17:02Z INFO Listener] Arguments parsed
+[2025-01-11 11:17:02Z INFO Runner] ExecuteCommand
+[2025-01-11 11:17:02Z INFO ConfigurationStore] currentAssemblyLocation: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/bin/Runner.Listener.dll
+[2025-01-11 11:17:02Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/bin'
+[2025-01-11 11:17:02Z INFO ConfigurationStore] binPath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/bin
+[2025-01-11 11:17:02Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/bin'
+[2025-01-11 11:17:02Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18'
+[2025-01-11 11:17:02Z INFO ConfigurationStore] RootFolder: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18
+[2025-01-11 11:17:02Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/bin'
+[2025-01-11 11:17:02Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18'
+[2025-01-11 11:17:02Z INFO HostContext] Well known config file 'Runner': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/.runner'
+[2025-01-11 11:17:02Z INFO ConfigurationStore] ConfigFilePath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/.runner
+[2025-01-11 11:17:02Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/bin'
+[2025-01-11 11:17:02Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18'
+[2025-01-11 11:17:02Z INFO HostContext] Well known config file 'Credentials': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/.credentials'
+[2025-01-11 11:17:02Z INFO ConfigurationStore] CredFilePath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/.credentials
+[2025-01-11 11:17:02Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/bin'
+[2025-01-11 11:17:02Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18'
+[2025-01-11 11:17:02Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/.credentials_migrated'
+[2025-01-11 11:17:02Z INFO ConfigurationStore] MigratedCredFilePath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/.credentials_migrated
+[2025-01-11 11:17:02Z INFO HostContext] Well known directory 'Bin': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/bin'
+[2025-01-11 11:17:02Z INFO HostContext] Well known directory 'Root': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18'
+[2025-01-11 11:17:02Z INFO HostContext] Well known config file 'Service': '/home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/.service'
+[2025-01-11 11:17:02Z INFO ConfigurationStore] ServiceConfigFilePath: /home/soha/Documents/Coursera_embedded_Linux/assignment-1-Soha18/.service
+[2025-01-11 11:17:02Z INFO CommandSettings] Flag 'help': 'False'
+[2025-01-11 11:17:02Z INFO CommandSettings] Flag 'version': 'False'
+[2025-01-11 11:17:02Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-01-11 11:17:02Z INFO CommandSettings] Flag 'check': 'False'
+[2025-01-11 11:17:02Z INFO CommandSettings] Command 'configure': 'False'
+[2025-01-11 11:17:02Z INFO CommandSettings] Command 'remove': 'True'
+[2025-01-11 11:17:02Z INFO CommandSettings] Flag 'local': 'False'
+[2025-01-11 11:17:02Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-01-11 11:17:02Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-01-11 11:17:02Z INFO ConfigurationStore] IsConfigured()
+[2025-01-11 11:17:02Z INFO ConfigurationStore] IsConfigured: False
+[2025-01-11 11:17:02Z INFO ConfigurationStore] HasCredentials()
+[2025-01-11 11:17:02Z INFO ConfigurationStore] stored False
+[2025-01-11 11:17:02Z INFO Terminal] WRITE LINE: Cannot connect to server, because config files are missing. Skipping removing runner from the server.
+[2025-01-11 11:17:02Z INFO ConfigurationStore] IsConfigured()
+[2025-01-11 11:17:02Z INFO ConfigurationStore] IsConfigured: False
+[2025-01-11 11:17:02Z INFO ConfigurationStore] HasCredentials()
+[2025-01-11 11:17:02Z INFO ConfigurationStore] stored False
+[2025-01-11 11:17:02Z INFO Terminal] WRITE LINE: Does not exist. Skipping Removing .credentials
+[2025-01-11 11:17:02Z INFO Terminal] WRITE LINE: Does not exist. Skipping Removing .runner
+[2025-01-11 11:17:02Z INFO Terminal] WRITE LINE: 
+[2025-01-11 11:17:02Z INFO Listener] Runner execution has finished with return code 0

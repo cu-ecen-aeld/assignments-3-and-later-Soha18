@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/sh
 # Script to open qemu terminal.
 # Author: Siddhant Jajoo.
 

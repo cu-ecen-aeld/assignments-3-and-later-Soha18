@@ -35,9 +35,18 @@ if [ ! -e ${OUTDIR}/linux-stable/arch/${ARCH}/boot/Image ]; then
     git checkout ${KERNEL_VERSION}
 
     # TODO: Add your kernel build steps here
+    make ARCH=${ARCH} CROSS_COMPILE=${CROSS_COMPILE}  mrproper
+    make ARCH=${ARCH} CROSS_COMPILE=${CROSS_COMPILE}  defconfig
+    # Please note that OpenSSL headers are required to compile the kernel.
+    # Ubuntu: sudo apt install libssl-dev
+    make ARCH=${ARCH} CROSS_COMPILE=${CROSS_COMPILE}  
+    #make ARCH=${ARCH} CROSS_COMPILE=${CROSS_COMPILE}  -j8 modules
+    make ARCH=${ARCH} CROSS_COMPILE=${CROSS_COMPILE}   dtbs
+
 fi
 
 echo "Adding the Image in outdir"
+cp ${OUTDIR}/linux-stable/arch/${ARCH}/boot/Image ${OUTDIR}
 
 echo "Creating the staging directory for the root filesystem"
 cd "$OUTDIR"
@@ -61,20 +70,58 @@ else
 fi
 
 # TODO: Make and install busybox
+make distclean
+make defconfig
+make ARCH=${ARCH} CROSS_COMPILE=${CROSS_COMPILE} -j4
+make ARCH=${ARCH} CROSS_COMPILE=${CROSS_COMPILE} CONFIG_PREFIX=${OUTDIR}/rootfs install
+
+cd ${OUTDIR}/rootfs
 
 echo "Library dependencies"
 ${CROSS_COMPILE}readelf -a bin/busybox | grep "program interpreter"
 ${CROSS_COMPILE}readelf -a bin/busybox | grep "Shared library"
 
 # TODO: Add library dependencies to rootfs
+mkdir -p lib{,64} || (echo "Failed to create lib directories in rootfs" && exit 1)
+
+# gcc resides in bin/, so go 1 level up
+ARM_TOOLCHAIN_PATH=$(dirname $(which ${CROSS_COMPILE}gcc))/..
+TOOLCHAIN_LIBS="${ARM_TOOLCHAIN_PATH}/aarch64-none-linux-gnu/libc"
+
+pushd $TOOLCHAIN_LIBS
+cp lib/ld-linux-aarch64.so.1 ${OUTDIR}/rootfs/lib/
+cd lib64
+cp libc.so.6 libm.so.6 libresolv.so.2 ${OUTDIR}/rootfs/lib64
+popd
 
 # TODO: Make device nodes
+# For some reason mknod dev/<device> does not work on my system, while cd dev && mknod <device> works.
+mkdir dev || (echo "Failed to create dev directory in rootfs" && exit 1)
+cd dev
+sudo mknod null -m 666 c 1 3
+sudo mknod console -m 666 c 5 1
+cd ..
 
 # TODO: Clean and build the writer utility
+cd $FINDER_APP_DIR
+make clean
+make CROSS_COMPILE=$CROSS_COMPILE
 
 # TODO: Copy the finder related scripts and executables to the /home directory
 # on the target rootfs
+mkdir -p $OUTDIR/rootfs/home || (echo "Failed to create home directory in rootfs" && exit 1)
+cp -r writer finder.sh finder-test.sh autorun-qemu.sh conf/ $OUTDIR/rootfs/home
+
+# Use correct path inside rootfs
+sed -i 's|\.\./conf/assignment|conf/assignment|g' $OUTDIR/rootfs/home/finder-test.sh
+# Use /bin/sh instead of /bin/bash which is absent in default busybox build
+sed -i 's|#!/bin/bash|#!/bin/sh|' $OUTDIR/rootfs/home/finder.sh
 
 # TODO: Chown the root directory
+sudo chown -R root:root "$OUTDIR/rootfs"
 
 # TODO: Create initramfs.cpio.gz
+cd "$OUTDIR/rootfs"
+find . | cpio -H newc -ov --owner root:root > ${OUTDIR}/initramfs.cpio
+cd ..
+gzip -f initramfs.cpio
