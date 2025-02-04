@@ -1,4 +1,3 @@
-### CROSS_COMPILE setup copied from BusyBox project: https://git.busybox.net/busybox/tree/Makefile
 TARGET ?= aesdsocket
 USE_AESD_CHAR_DEVICE ?= -DUSE_AESD_CHAR_DEVICE
 
