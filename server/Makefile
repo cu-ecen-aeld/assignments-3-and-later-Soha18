@@ -1,4 +1,9 @@
+ifeq ($(CROSS_COMPILE),)
 CC = gcc
+else
+CC = $(CROSS_COMPILE)gcc
+endif
+
 CFLAGS = -Wall -Werror -g
 TARGET = aesdsocket
 SRC = aesdsocket.c
