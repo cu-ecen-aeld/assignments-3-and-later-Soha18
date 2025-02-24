@@ -3,7 +3,7 @@ USE_AESD_CHAR_DEVICE ?= -DUSE_AESD_CHAR_DEVICE
 
 CC ?= $(CROSS_COMPILE)gcc
 CFLAGS ?= -g -Wall -Werror
-LDFLAGS ?= -lpthread -lrt
+LDFLAGS ?= -pthread -lrt
 
 CPPFLAGS ?= $(USE_AESD_CHAR_DEVICE)
 
