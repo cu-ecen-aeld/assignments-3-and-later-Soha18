@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 DAEMON_PATH="/usr/bin/aesdsocket"
 DAEMON_NAME="asdsocket"
 PIDFILE="/var/run/$DAEMON_NAME.pid"
