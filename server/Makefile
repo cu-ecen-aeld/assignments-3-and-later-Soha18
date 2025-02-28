@@ -1,6 +1,6 @@
 SRC = aesdsocket.c
-#BIN = aesdsocket
-#DESTDIR = /usr/bin
+BIN = aesdsocket
+DESTDIR = /usr/bin
 
 TARGET ?= aesdsocket
 USE_AESD_CHAR_DEVICE ?= -DUSE_AESD_CHAR_DEVICE
