@@ -12,15 +12,19 @@
 #include <sys/stat.h>
 #include <pthread.h>
 #include <time.h>
-#include "queue.h"  // Include the queue header file
+#include "queue.h"
 
 #define PORT 9000
-#define FILE_PATH "/var/tmp/aesdsocketdata"
+
+#ifdef USE_AESD_CHAR_DEVICE
+const char *filename = "/dev/aesdchar";
+#else
+const char *filename = "/var/tmp/aesdsocketdata";
+#endif
 
 int server_socket = -1;
 pthread_mutex_t file_mutex = PTHREAD_MUTEX_INITIALIZER;
 
-// Structure for thread arguments
 struct client_data {
     int client_socket;
     TAILQ_ENTRY(client_data) entries;
@@ -38,7 +42,7 @@ void *handle_client(void *arg) {
     ssize_t bytes_received;
 
     syslog(LOG_INFO, "Handling new client connection");
-    int file_fd = open(FILE_PATH, O_CREAT | O_WRONLY | O_APPEND, 0644);
+    int file_fd = open(filename, O_CREAT | O_WRONLY | O_APPEND, 0644);
     if (file_fd == -1) {
         syslog(LOG_ERR, "Error opening file");
         close(client_socket);
@@ -55,7 +59,7 @@ void *handle_client(void *arg) {
     }
     close(file_fd);
 
-    file_fd = open(FILE_PATH, O_RDONLY);
+    file_fd = open(filename, O_RDONLY);
     if (file_fd != -1) {
         while ((bytes_received = read(file_fd, buffer, sizeof(buffer))) > 0) {
             send(client_socket, buffer, bytes_received, 0);
@@ -69,6 +73,7 @@ void *handle_client(void *arg) {
     return NULL;
 }
 
+#ifndef USE_AESD_CHAR_DEVICE  // Only enable timestamp logging if not using aesdchar
 void *timestamp_logger(void *arg) {
     while (!exit_flag) {
         sleep(10);
@@ -78,7 +83,7 @@ void *timestamp_logger(void *arg) {
         strftime(timestamp, sizeof(timestamp), "timestamp: %Y-%m-%d %H:%M:%S\n", time_info);
 
         pthread_mutex_lock(&file_mutex);
-        int file_fd = open(FILE_PATH, O_CREAT | O_WRONLY | O_APPEND, 0644);
+        int file_fd = open(filename, O_CREAT | O_WRONLY | O_APPEND, 0644);
         if (file_fd != -1) {
             write(file_fd, timestamp, strlen(timestamp));
             close(file_fd);
@@ -87,14 +92,19 @@ void *timestamp_logger(void *arg) {
     }
     return NULL;
 }
+#endif
 
 void handle_signal(int sig) {
     syslog(LOG_INFO, "Caught signal, exiting");
     exit_flag = 1;
+    
+#ifndef USE_AESD_CHAR_DEVICE
+    remove(filename);  // Only remove file if using /var/tmp/aesdsocketdata
+#endif
+    
     pthread_cancel(timer_thread);
     pthread_join(timer_thread, NULL);
     close(server_socket);
-    remove(FILE_PATH);
     closelog();
     exit(0);
 }
@@ -137,7 +147,10 @@ int main(int argc, char *argv[]) {
     }
 
     syslog(LOG_INFO, "Server started on port %d", PORT);
-    pthread_create(&timer_thread, NULL, timestamp_logger, NULL);
+
+#ifndef USE_AESD_CHAR_DEVICE
+    pthread_create(&timer_thread, NULL, timestamp_logger, NULL);  // Start timestamp logger only if not using aesdchar
+#endif
 
     TAILQ_INIT(&clients);
     while (1) {
@@ -154,3 +167,4 @@ int main(int argc, char *argv[]) {
     }
     return 0;
 }
+
