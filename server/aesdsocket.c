@@ -75,9 +75,9 @@ void handle_signal(int sig) {
     syslog(LOG_INFO, "Caught signal, exiting");
     exit_flag = 1;
     
-#ifndef USE_AESD_CHAR_DEVICE
+//#ifndef USE_AESD_CHAR_DEVICE
     remove(filename);  // Only remove file if using /var/tmp/aesdsocketdata
-#endif
+//#endif
     
     close(server_socket);
     closelog();
