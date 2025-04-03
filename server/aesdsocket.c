@@ -16,6 +16,9 @@
 
 #define PORT 9000
 
+#define BUFFER_SIZE 1024
+#define USE_AESD_CHAR_DEVICE 1
+
 #ifdef USE_AESD_CHAR_DEVICE
 const char *filename = "/dev/aesdchar";
 #else
