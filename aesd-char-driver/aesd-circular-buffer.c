@@ -91,3 +91,15 @@ void aesd_circular_buffer_init(struct aesd_circular_buffer *buffer)
 {
     memset(buffer,0,sizeof(struct aesd_circular_buffer));
 }
+loff_t aesd_circular_buffer_get_total_bytes(struct aesd_circular_buffer *buffer) {
+    loff_t total = 0;
+    uint8_t index;
+
+    for (index = 0; index < AESDCHAR_MAX_WRITE_OPERATIONS_SUPPORTED; index++) {
+        if (buffer->entry[index].buffptr != NULL) {
+            total += buffer->entry[index].size;
+        }
+    }
+    return total;
+}
+

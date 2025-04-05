@@ -12,6 +12,8 @@
 #include <sys/stat.h>
 #include <pthread.h>
 #include "queue.h"
+#include "aesd_ioctl.h"
+
 
 #define PORT 9000
 #define USE_AESD_CHAR_DEVICE 1
@@ -40,32 +42,74 @@ void *handle_client(void *arg) {
     ssize_t bytes_received;
 
     syslog(LOG_INFO, "Handling new client connection");
-    int file_fd = open(filename, O_CREAT | O_WRONLY | O_APPEND, 0644);
+
+    int file_fd = open(filename, O_RDWR | O_CREAT | O_APPEND, 0644);
     if (file_fd == -1) {
-        syslog(LOG_ERR, "Error opening file");
+        syslog(LOG_ERR, "Error opening file: %s", strerror(errno));
         close(client_socket);
         free(data);
         return NULL;
     }
 
-    while ((bytes_received = recv(client_socket, buffer, sizeof(buffer) - 1, 0)) > 0) {
-        buffer[bytes_received] = '\0';
-        pthread_mutex_lock(&file_mutex);
-        write(file_fd, buffer, bytes_received);
-        pthread_mutex_unlock(&file_mutex);
-        if (strchr(buffer, '\n')) break;
-    }
-    close(file_fd);
-
-    file_fd = open(filename, O_RDONLY);
-    if (file_fd != -1) {
-        while ((bytes_received = read(file_fd, buffer, sizeof(buffer))) > 0) {
-            send(client_socket, buffer, bytes_received, 0);
-        }
+    memset(buffer, 0, sizeof(buffer));
+    bytes_received = recv(client_socket, buffer, sizeof(buffer) - 1, 0);
+    if (bytes_received <= 0) {
+        syslog(LOG_ERR, "Failed to receive from client");
         close(file_fd);
+        close(client_socket);
+        free(data);
+        return NULL;
     }
 
-    syslog(LOG_INFO, "Client disconnected");
+    buffer[bytes_received] = '\0';
+
+    // Check for AESDCHAR_IOCSEEKTO:X,Y
+    if (strncmp(buffer, "AESDCHAR_IOCSEEKTO:", 20) == 0) {
+        unsigned int write_cmd = 0, write_cmd_offset = 0;
+        if (sscanf(buffer + 20, "%u,%u", &write_cmd, &write_cmd_offset) == 2) {
+            struct aesd_seekto seek_to = {
+                .write_cmd = write_cmd,
+                .write_cmd_offset = write_cmd_offset
+            };
+
+            if (ioctl(file_fd, AESDCHAR_IOCSEEKTO, &seek_to) == -1) {
+                syslog(LOG_ERR, "ioctl AESDCHAR_IOCSEEKTO failed: %s", strerror(errno));
+            } else {
+                syslog(LOG_INFO, "ioctl AESDCHAR_IOCSEEKTO success: %u,%u", write_cmd, write_cmd_offset);
+            }
+
+            // Read from new offset and send back
+            pthread_mutex_lock(&file_mutex);
+            ssize_t read_bytes;
+            while ((read_bytes = read(file_fd, buffer, sizeof(buffer))) > 0) {
+                send(client_socket, buffer, read_bytes, 0);
+            }
+            pthread_mutex_unlock(&file_mutex);
+
+            close(file_fd);
+            close(client_socket);
+            free(data);
+            return NULL;
+        }
+    }
+
+    // Otherwise, treat as regular input and write it
+    pthread_mutex_lock(&file_mutex);
+    write(file_fd, buffer, bytes_received);
+    pthread_mutex_unlock(&file_mutex);
+
+    // If message contains \n, echo full file back
+    if (strchr(buffer, '\n')) {
+        lseek(file_fd, 0, SEEK_SET); // rewind for reading
+        pthread_mutex_lock(&file_mutex);
+        ssize_t read_bytes;
+        while ((read_bytes = read(file_fd, buffer, sizeof(buffer))) > 0) {
+            send(client_socket, buffer, read_bytes, 0);
+        }
+        pthread_mutex_unlock(&file_mutex);
+    }
+
+    close(file_fd);
     close(client_socket);
     free(data);
     return NULL;
