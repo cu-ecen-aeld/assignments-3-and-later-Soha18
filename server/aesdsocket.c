@@ -2,48 +2,45 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <sys/socket.h>
-#include <arpa/inet.h>
-#include <syslog.h>
-#include <signal.h>
-#include <fcntl.h>
 #include <errno.h>
+#include <fcntl.h>
+#include <signal.h>
+#include <sys/socket.h>
 #include <sys/types.h>
-#include <sys/stat.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
 #include <pthread.h>
-#include "queue.h"
+#include <syslog.h>
+#include <sys/stat.h>
+#include <stdbool.h>
+#include <time.h>
+#include <sys/ioctl.h>
 #include "aesd_ioctl.h"
 
-
 #define PORT 9000
-#define USE_AESD_CHAR_DEVICE 1
-#ifdef USE_AESD_CHAR_DEVICE
-const char *filename = "/dev/aesdchar";
-#else
-const char *filename = "/var/tmp/aesdsocketdata";
-#endif
+#define FILE_PATH "/dev/aesdchar"
+#define BUFFER_SIZE 1024
 
-int server_socket = -1;
 pthread_mutex_t file_mutex = PTHREAD_MUTEX_INITIALIZER;
+volatile sig_atomic_t exit_signal = 0;
 
 struct client_data {
     int client_socket;
-    TAILQ_ENTRY(client_data) entries;
 };
 
-TAILQ_HEAD(client_list, client_data);
-struct client_list clients;
-int exit_flag = 0;
+void signal_handler(int sig) {
+    exit_signal = 1;
+}
 
 void *handle_client(void *arg) {
     struct client_data *data = (struct client_data *)arg;
     int client_socket = data->client_socket;
-    char buffer[1024];
+    char buffer[BUFFER_SIZE];
     ssize_t bytes_received;
 
     syslog(LOG_INFO, "Handling new client connection");
 
-    int file_fd = open(filename, O_RDWR | O_CREAT | O_APPEND, 0644);
+    int file_fd = open(FILE_PATH, O_RDWR | O_APPEND);
     if (file_fd == -1) {
         syslog(LOG_ERR, "Error opening file: %s", strerror(errno));
         close(client_socket);
@@ -51,135 +48,97 @@ void *handle_client(void *arg) {
         return NULL;
     }
 
-    memset(buffer, 0, sizeof(buffer));
-    bytes_received = recv(client_socket, buffer, sizeof(buffer) - 1, 0);
-    if (bytes_received <= 0) {
-        syslog(LOG_ERR, "Failed to receive from client");
-        close(file_fd);
-        close(client_socket);
-        free(data);
-        return NULL;
-    }
+    while ((bytes_received = recv(client_socket, buffer, sizeof(buffer) - 1, 0)) > 0) {
+        buffer[bytes_received] = '\0';
 
-    buffer[bytes_received] = '\0';
+        // Check for AESDCHAR_IOCSEEKTO command
+        if (strncmp(buffer, "AESDCHAR_IOCSEEKTO:", 20) == 0) {
+            unsigned int write_cmd = 0, write_cmd_offset = 0;
+            sscanf(buffer + 20, "%u,%u", &write_cmd, &write_cmd_offset);
 
-    // Check for AESDCHAR_IOCSEEKTO:X,Y
-    if (strncmp(buffer, "AESDCHAR_IOCSEEKTO:", 20) == 0) {
-        unsigned int write_cmd = 0, write_cmd_offset = 0;
-        if (sscanf(buffer + 20, "%u,%u", &write_cmd, &write_cmd_offset) == 2) {
-            struct aesd_seekto seek_to = {
+            struct aesd_seekto seekto = {
                 .write_cmd = write_cmd,
                 .write_cmd_offset = write_cmd_offset
             };
 
-            if (ioctl(file_fd, AESDCHAR_IOCSEEKTO, &seek_to) == -1) {
-                syslog(LOG_ERR, "ioctl AESDCHAR_IOCSEEKTO failed: %s", strerror(errno));
-            } else {
-                syslog(LOG_INFO, "ioctl AESDCHAR_IOCSEEKTO success: %u,%u", write_cmd, write_cmd_offset);
-            }
-
-            // Read from new offset and send back
             pthread_mutex_lock(&file_mutex);
-            ssize_t read_bytes;
-            while ((read_bytes = read(file_fd, buffer, sizeof(buffer))) > 0) {
-                send(client_socket, buffer, read_bytes, 0);
+            if (ioctl(file_fd, AESDCHAR_IOCSEEKTO, &seekto) == -1) {
+                syslog(LOG_ERR, "ioctl failed: %s", strerror(errno));
             }
             pthread_mutex_unlock(&file_mutex);
-
-            close(file_fd);
-            close(client_socket);
-            free(data);
-            return NULL;
+        } else {
+            pthread_mutex_lock(&file_mutex);
+            write(file_fd, buffer, bytes_received);
+            pthread_mutex_unlock(&file_mutex);
         }
+
+        if (strchr(buffer, '\n')) break;
     }
 
-    // Otherwise, treat as regular input and write it
+    // Send back file content using same file_fd
     pthread_mutex_lock(&file_mutex);
-    write(file_fd, buffer, bytes_received);
+    lseek(file_fd, 0, SEEK_SET);
+    while ((bytes_received = read(file_fd, buffer, sizeof(buffer))) > 0) {
+        send(client_socket, buffer, bytes_received, 0);
+    }
     pthread_mutex_unlock(&file_mutex);
 
-    // If message contains \n, echo full file back
-    if (strchr(buffer, '\n')) {
-        lseek(file_fd, 0, SEEK_SET); // rewind for reading
-        pthread_mutex_lock(&file_mutex);
-        ssize_t read_bytes;
-        while ((read_bytes = read(file_fd, buffer, sizeof(buffer))) > 0) {
-            send(client_socket, buffer, read_bytes, 0);
-        }
-        pthread_mutex_unlock(&file_mutex);
-    }
-
+    syslog(LOG_INFO, "Client disconnected");
     close(file_fd);
     close(client_socket);
     free(data);
     return NULL;
 }
 
-void handle_signal(int sig) {
-    syslog(LOG_INFO, "Caught signal, exiting");
-    exit_flag = 1;
-    
-//#ifndef USE_AESD_CHAR_DEVICE
-    remove(filename);  // Only remove file if using /var/tmp/aesdsocketdata
-//#endif
-    
-    close(server_socket);
-    closelog();
-    exit(0);
-}
+int main() {
+    int server_socket, client_socket;
+    struct sockaddr_in server_addr, client_addr;
+    socklen_t client_addr_len = sizeof(client_addr);
+    pthread_t thread;
 
-int main(int argc, char *argv[]) {
-    int daemon_mode = 0;
-    if (argc > 1 && strcmp(argv[1], "-d") == 0) {
-        daemon_mode = 1;
-    }
-
-    openlog("aesdsocket", LOG_PID | LOG_CONS, LOG_USER);
-    signal(SIGINT, handle_signal);
-    signal(SIGTERM, handle_signal);
-
-    if (daemon_mode && daemon(0, 0) < 0) {
-        syslog(LOG_ERR, "Failed to daemonize");
-        exit(EXIT_FAILURE);
-    }
+    openlog("aesdsocket", LOG_PID, LOG_USER);
+    signal(SIGINT, signal_handler);
+    signal(SIGTERM, signal_handler);
 
     server_socket = socket(AF_INET, SOCK_STREAM, 0);
     if (server_socket == -1) {
-        syslog(LOG_ERR, "Error creating socket");
-        exit(EXIT_FAILURE);
+        syslog(LOG_ERR, "Socket creation failed: %s", strerror(errno));
+        return EXIT_FAILURE;
     }
 
-    int opt = 1;
-    setsockopt(server_socket, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
-    struct sockaddr_in server_addr = { .sin_family = AF_INET, .sin_addr.s_addr = INADDR_ANY, .sin_port = htons(PORT) };
+    memset(&server_addr, 0, sizeof(server_addr));
+    server_addr.sin_family = AF_INET;
+    server_addr.sin_port = htons(PORT);
+    server_addr.sin_addr.s_addr = INADDR_ANY;
 
     if (bind(server_socket, (struct sockaddr *)&server_addr, sizeof(server_addr)) == -1) {
-        syslog(LOG_ERR, "Error binding socket");
+        syslog(LOG_ERR, "Bind failed: %s", strerror(errno));
         close(server_socket);
-        exit(EXIT_FAILURE);
+        return EXIT_FAILURE;
     }
 
     if (listen(server_socket, 10) == -1) {
-        syslog(LOG_ERR, "Error listening on socket");
+        syslog(LOG_ERR, "Listen failed: %s", strerror(errno));
         close(server_socket);
-        exit(EXIT_FAILURE);
+        return EXIT_FAILURE;
     }
 
-    syslog(LOG_INFO, "Server started on port %d", PORT);
-
-    TAILQ_INIT(&clients);
-    while (1) {
-        struct sockaddr_in client_addr;
-        socklen_t client_len = sizeof(client_addr);
-        int client_socket = accept(server_socket, (struct sockaddr *)&client_addr, &client_len);
-        if (client_socket == -1) continue;
+    while (!exit_signal) {
+        client_socket = accept(server_socket, (struct sockaddr *)&client_addr, &client_addr_len);
+        if (client_socket == -1) {
+            if (exit_signal) break;
+            syslog(LOG_ERR, "Accept failed: %s", strerror(errno));
+            continue;
+        }
 
         struct client_data *data = malloc(sizeof(struct client_data));
         data->client_socket = client_socket;
-        pthread_t thread;
         pthread_create(&thread, NULL, handle_client, data);
         pthread_detach(thread);
     }
+
+    close(server_socket);
+    closelog();
     return 0;
 }
 
