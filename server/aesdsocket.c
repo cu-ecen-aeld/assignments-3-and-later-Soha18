@@ -37,6 +37,8 @@ void *handle_client(void *arg) {
     int client_socket = data->client_socket;
     char buffer[BUFFER_SIZE];
     ssize_t bytes_received;
+    char *partial_buffer = NULL;
+    size_t partial_size = 0;
 
     syslog(LOG_INFO, "Handling new client connection");
 
@@ -51,7 +53,7 @@ void *handle_client(void *arg) {
     while ((bytes_received = recv(client_socket, buffer, sizeof(buffer) - 1, 0)) > 0) {
         buffer[bytes_received] = '\0';
 
-        // Check for AESDCHAR_IOCSEEKTO command
+        // Check for IOCTL command first (keep existing IOCTL handling)
         if (strncmp(buffer, "AESDCHAR_IOCSEEKTO:", 20) == 0) {
             unsigned int write_cmd = 0, write_cmd_offset = 0;
             sscanf(buffer + 20, "%u,%u", &write_cmd, &write_cmd_offset);
@@ -67,7 +69,33 @@ void *handle_client(void *arg) {
             }
             pthread_mutex_unlock(&file_mutex);
         } else {
+            // Handle partial writes
+            char *newline_pos = strchr(buffer, '\n');
+            if (!newline_pos) {
+                // No newline found - this is a partial write
+                char *new_partial = realloc(partial_buffer, partial_size + bytes_received);
+                if (!new_partial) {
+                    syslog(LOG_ERR, "Failed to allocate memory for partial write");
+                    free(partial_buffer);
+                    break;
+                }
+                partial_buffer = new_partial;
+                memcpy(partial_buffer + partial_size, buffer, bytes_received);
+                partial_size += bytes_received;
+                continue;
+            }
+
+            // We found a newline - write any partial data first
             pthread_mutex_lock(&file_mutex);
+            if (partial_buffer) {
+                // Write accumulated partial data
+                write(file_fd, partial_buffer, partial_size);
+                free(partial_buffer);
+                partial_buffer = NULL;
+                partial_size = 0;
+            }
+
+            // Write the current buffer
             write(file_fd, buffer, bytes_received);
             pthread_mutex_unlock(&file_mutex);
         }
@@ -77,8 +105,8 @@ void *handle_client(void *arg) {
 
     // Send back file content using same file_fd
     pthread_mutex_lock(&file_mutex);
-    lseek(file_fd, 0, SEEK_SET);
     while ((bytes_received = read(file_fd, buffer, sizeof(buffer))) > 0) {
+        syslog(LOG_DEBUG, "Read %zd bytes after seek", bytes_received);
         send(client_socket, buffer, bytes_received, 0);
     }
     pthread_mutex_unlock(&file_mutex);
@@ -87,6 +115,12 @@ void *handle_client(void *arg) {
     close(file_fd);
     close(client_socket);
     free(data);
+
+    // Cleanup at the end of the function
+    if (partial_buffer) {
+        free(partial_buffer);
+    }
+
     return NULL;
 }
 
