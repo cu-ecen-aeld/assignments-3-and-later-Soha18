@@ -50,10 +50,6 @@ struct aesd_circular_buffer
      */
     bool full;
 };
-/**
- * Return total number of bytes currently in buffer
- */
-loff_t aesd_circular_buffer_get_total_bytes(struct aesd_circular_buffer *buffer);
 
 extern struct aesd_buffer_entry *aesd_circular_buffer_find_entry_offset_for_fpos(struct aesd_circular_buffer *buffer,
             size_t char_offset, size_t *entry_offset_byte_rtn );
